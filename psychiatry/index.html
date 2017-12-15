@@ -882,7 +882,7 @@
             if (!win.clientWidth) return;
             // 改变DOM根节点fontSize大小的值;
             // (屏幕宽度/设计图宽度) = 缩放或扩大的比例值;
-            docEl.style.fontSize = 16 * (win.clientWidth / 320) + 'px';
+            docEl.style.fontSize = 14 * (win.clientWidth / 320) + 'px';
         };
         if (!doc.addEventListener) return;
         win.addEventListener(resizeEvent, rescale, false);
