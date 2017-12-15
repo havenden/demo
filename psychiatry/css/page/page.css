@@ -48,6 +48,9 @@ body {
     margin: 0.1rem 0;
     padding: 0;
 }
+.inquire-box li img{
+    width: 50%;
+}
 .inquire-box .content{
     width: 97%;
     margin: auto;
