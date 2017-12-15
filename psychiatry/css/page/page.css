@@ -388,7 +388,7 @@ body {
 .title-num{display: inline-block;padding:0.5rem;border-top-right-radius: 1rem;border-bottom-right-radius: 1rem; }
 /*header*/
 header ul.nav li{margin-bottom: 0.22rem;padding: 0;}
-header ul.nav li a{display: inline-block;width: 97%;background: #10a971;color: #fff;padding:.2rem 0;font-size: 1.1rem;text-decoration: none;}
+header ul.nav li a{display: inline-block;width: 97%;background: #10a971;color: #fff;padding:.2rem 0;font-size: 1rem;text-decoration: none;}
 
 
 

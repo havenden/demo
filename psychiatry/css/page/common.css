@@ -30,20 +30,11 @@ ul{
 .w-10{
   width: 10%;
 }
-.c-f00{
-  color: #f00
-}
-.c-000{
-  color: #000;
-}
 .fl{
   float: left;
 }
 .fr{
   float: right!important;
-}
-.oh{
-  overflow: hidden;
 }
 a:hover{
   text-decoration: none!important;
