@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="wap-font-scale" content="no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- plugs -->
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.11.1/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+
+    <title>灰指甲症状专题</title>
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description">
+    <link rel="stylesheet" href="css/page/page.css">
+</head>
+<body style="max-width: 640px;" class="mx-auto">
+
+<div class="container p0" id="container" style="max-width: 640px;">
+    <!-- header -->
+    <header>
+        <!-- top-position -->
+        <div class="top-position">
+            <p class="hospital-name"><span class="iconfont icon-position"></span>广东省精神疾病治疗中心</p>
+        </div>
+
+        <div class="logo">
+            <a href=""><img width="80%" src="img/logo.png"></a><a href=""><img width="20%" src="img/tel.gif"></a>
+        </div>
+        <ul class="list-unstyled row text-center nav mx-0">
+            <li class="col-3"><a href="/">网站首页</a></li>
+            <li class="col-3"><a href="/page/yyjs/">益寿简介</a></li>
+            <li class="col-3"><a href="/page/zj/">特色诊疗</a></li>
+            <li class="col-3"><a href="javascript:;">专家团队</a></li>
+            <li class="col-3"><a href="/page/kfal/">援助申请</a></li>
+            <li class="col-3"><a href="/page/tslf/">疾病自测</a></li>
+            <li class="col-3"><a href="/page/lylx/">自助挂号</a></li>
+            <li class="col-3"><a href="javascript:;">来院路线</a></li>
+        </ul>
+    </header>
+    <!-- banner -->
+    <div class="banner">
+        <div id="bannerIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#bannerIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#bannerIndicators" data-slide-to="1"></li>
+                <li data-target="#bannerIndicators" data-slide-to="2"></li>
+                <li data-target="#bannerIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="javascript:;"><img class="d-block w-100" src="img/page/banner.jpg" alt="First slide"></a>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/page/banner2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/page/banner3.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/page/banner4.jpg" alt="Second slide">
+                </div>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                var doctorElement = document.getElementById('bannerIndicators');
+                var hm = new Hammer(doctorElement);
+                hm.on("swipeleft", function () {
+                    $('#bannerIndicators').carousel('next')
+                });
+                hm.on("swiperight", function () {
+                    $('#bannerIndicators').carousel('prev')
+                })
+            })
+        </script>
+    </div>
+
+
+    <div class="item-section1 mt-3">
+        <!-- 上下分页 -->
+        <ul class="nav nav-tabs" id="inquire-tab">
+            <li class="active"><a href="#isease-icon-list"><span class="iconfont icon-column"></span>疾病查询</a></li>
+            <li><a href="#symptom-icon-list"><span class="iconfont icon-inquire"></span>症状查询</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane inquire-box active" id="isease-icon-list">
+
+                <ul class="list-unstyled row text-center nav mx-0">
+                    <li class="col-4">
+                        <div class="content bg-color1">
+                            <img src="img/page/jb-ico1.png">
+
+                            <div class="disease-desc">失眠症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color2">
+                            <img src="img/page/jb-ico2.png">
+
+                            <div class="disease-desc">抑郁症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color3"><img src="img/page/jb-ico3.png">
+
+                            <div class="disease-desc">精神分裂</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color2">
+                            <img src="img/page/jb-ico4.png">
+
+                            <div class="disease-desc">躯体形式障碍</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color3">
+                            <img src="img/page/jb-ico5.png">
+
+                            <div class="disease-desc">狂躁症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color1">
+                            <img src="img/page/jb-ico6.png">
+
+                            <div class="disease-desc">精神障碍</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color3">
+                            <img src="img/page/jb-ico7.png">
+
+                            <div class="disease-desc">头晕头痛</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color1">
+                            <img src="img/page/jb-ico8.png">
+
+                            <div class="disease-desc">神经衰弱</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color3">
+                            <img src="img/page/jb-ico9.png">
+
+                            <div class="disease-desc">更年期综合症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color2">
+                            <img src="img/page/jb-ico10.png">
+
+                            <div class="disease-desc">焦虑症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color4">
+                            <img src="img/page/jb-ico11.png">
+
+                            <div class="disease-desc">癫痫症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color1">
+                            <img src="img/page/jb-ico12.png">
+
+                            <div class="disease-desc">强迫症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color2">
+                            <img src="img/page/jb-ico13.png">
+
+                            <div class="disease-desc">心理咨询</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color5">
+                            <img src="img/page/jb-ico14.png">
+
+                            <div class="disease-desc">神经官能症</div>
+                        </div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color6">
+                            <img src="img/page/jb-ico15.png">
+
+                            <div class="disease-desc">其他疾病</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane inquire-box" id="symptom-icon-list">
+                <ul class="list-unstyled row text-center nav mx-0">
+                    <li class="col-4">
+                        <div class="content bg-color1">幻听幻觉</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color6">狂躁不安</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color1">冲动伤人</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color2">意志减退</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color7">胡言乱语</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color2">自杀倾向</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color3">痴笑傻笑</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color8">敏感多疑</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color3">兴趣丧失</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color4">乱甩东西</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color9">郁郁寡欢</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color4">思维迟缓</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color5">沉默少语</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color10">行为古怪</div>
+                    </li>
+                    <li class="col-4">
+                        <div class="content bg-color5">失眠多梦</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <script>
+            $(function () {
+                $('#inquire-tab a.active').tab('show');
+            });
+            $('#inquire-tab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            })
+        </script>
+    </div>
+
+    <!-- 最新资讯 -->
+    <div class="item item-section2 mt-3">
+        <ul class="row mx-0">
+            <li class="col-6 px-0 h5 btn-green mb-0 pl-1 text-white lt-title">最新资讯</li>
+            <li class="col-6 px-0 btn-green">
+                <a href="tel:020-3919 9120" class="row btn-green mx-0">
+                    <span class="iconfont icon-tel tr px-0 col-3 mt-1"></span>
+                    <ul class="col-9 tel-txt">
+                        <li>一键免费通话</li>
+                        <li>020-3619 9120</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+
+        <div class="row information">
+            <div class="col-4 pr-0">
+                <div class="">
+                    <img src="img/page/img3.jpg" class="w-100">
+                </div>
+            </div>
+            <div class="col-8 px-0 mt-2">
+                <div class="ml-2">
+                    <p class="theme-title">第一届失眠病友康复交流会在我院举办</p>
+
+                    <p class="mb-0 py-2 px-1 theme-txt">2017年8月21日，第一届失眠病友康复经验交流会在广州益寿医院隆重举行<span
+                            class="error">【详情】</span></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="item item-section3 mt-3">
+        <ul class="row mx-0">
+            <li class="col-6 px-0 h5 btn-green mb-0 pl-1 text-white lt-title">诊疗团队</li>
+            <li class="col-6 px-0 btn-green">
+                <a href="tel:020-3919 9120" class="row btn-green mx-0">
+                    <span class="iconfont icon-tel tr px-0 col-3 mt-1"></span>
+                    <ul class="col-9 tel-txt">
+                        <li>一键免费通话</li>
+                        <li>020-3619 9120</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+
+
+        <div id="medical-team" class="carousel slide mt-3" data-ride="carousel"
+             style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+            <ul class="carousel-inner doctor-info">
+                <li class="carousel-item row active">
+                    <div class="col-6 pr-0 fl">
+                        <img src="img/page/zhangkebin.jpg" class="w-100">
+                    </div>
+                    <div class="col-6 px-0 fl">
+                        <div class="ml-2">
+                            <div class="doctor-name">张可斌<span class="job">&nbsp;&nbsp;学科带头人</span></div>
+                            <p class="job-title"><img class="w-10" src="img/page/recommend.png">科主任</p>
+
+                            <p class="job-title"><img class="w-10" src="img/page/recommend.png">失眠抑郁研究组组长</p>
+
+                            <p class="mb-0 mt1 px-1 good-at-txt">
+                                擅长：治疗顽固性失眠、焦虑、抑郁、躁狂症、双相情感障碍、强迫症、驱体障碍、神经症、多动症、自闭症等精神系统疾病…<span
+                                    class="error">【详情】</span></p>
+                            <img class="mt-1 w-100" src="img/page/certificate-zhangkebin.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-item row">
+                    <div class="col-6 pr-0 fl">
+                        <img src="img/page/guolianfang.jpg" class="w-100">
+                    </div>
+                    <div class="col-6 px-0 fl">
+                        <div class="ml-2">
+                            <div class="doctor-name">郭莲舫<span class="job">&nbsp;&nbsp;主治医师</span></div>
+                            <p class="job-title"><img class="w-10" src="img/page/recommend.png">上海益寿医院名誉院长</p>
+
+                            <p class="job-title"><img class="w-10" src="img/page/recommend.png">失眠抑郁研究组组长</p>
+
+                            <p class="mb-0 mt-1 px-1 good-at-txt">
+                                擅长各类精神障碍、青少年心理治疗、家庭心理治疗，对于失眠症、抑郁症、精神分裂症、心理疾病等方面有很深的研究和诊疗经验…<span
+                                    class="error">【详情】</span></p>
+                            <img class="mt-1 w-100" src="img/page/certificate-guolianfang.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-item row">
+                    <div class="col-6 pr-0 fl">
+                        <img src="img/page/zhangxinglong.jpg" class="w-100">
+                    </div>
+                    <div class="col-6 px-0 fl">
+                        <div class="ml-2">
+                            <div class="doctor-name">张兴龙<span class="job">&nbsp;&nbsp;职业心理咨询师</span></div>
+                            <p class="job-title"><img class="w-10" src="img/page/recommend.png">CBT心理咨询师</p>
+
+                            <p class="job-title"><img class="w-10" src="img/page/recommend.png">心理学硕士研究生</p>
+
+                            <p class="mb-0 py-2 px-1 good-at-txt">擅长：采用精神分析、心理动力取向疗法、认知行为疗法、催眠等进行抑郁、失眠、神经症等治疗…<span
+                                    class="error">【详情】</span></p>
+                            <img class="w-100" src="img/page/certificate-zhangxinglong.jpg">
+                        </div>
+                    </div>
+                </li>
+                <li class="carousel-item row">
+                    <div class="col-6 pr-0 fl">
+                        <img src="img/page/zhengyan.jpg" class="w-100">
+                    </div>
+                    <div class="col-6 px-0 fl">
+                        <div class="ml-2">
+                            <div class="doctor-name">郑岩<span class="job">&nbsp;&nbsp;主治医师</span></div>
+                            <p class="job-title"><img class="w-10" src="img/page/recommend.png">精神卫生专业主治医师</p>
+
+                            <p class="mb-0 py-2 px-1 good-at-txt">执业范围：精神卫生专业，于2015年12月取得主治医师资格证书…<span
+                                    class="error">【详情】</span></p>
+                            <img class="w-100" src="img/page/certificate-zhengyan.jpg">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            $(function () {
+                var doctorElement = document.getElementById('medical-team');
+                var hm = new Hammer(doctorElement);
+                hm.on("swipeleft", function () {
+                    $('#medical-team').carousel('next')
+                });
+                hm.on("swiperight", function () {
+                    $('#medical-team').carousel('prev')
+                })
+            })
+        </script>
+
+    </div>
+
+    <!-- 视频 -->
+    <div class="item-section4 mt-3">
+
+        <div class="video tc">
+            <video controls="controls" width="95%"  src=" http://ssyl.oss-cn-shenzhen.aliyuncs.com/jsfl.mp4"
+                   poster="http://ssyl.oss-cn-shenzhen.aliyuncs.com/yiyu.jpg"></video>
+        </div>
+
+    </div>
+
+    <ul class="item-section5 mt-3 tc">
+        <li class="row mx-0 mt-3">
+            <div class="col-6 mb-0 ">
+                <div class="video tc">
+                    <video width="100%" controls="controls" src="http://ssyl.oss-cn-shenzhen.aliyuncs.com/sm.mp4"
+                           poster="http://ssyl.oss-cn-shenzhen.aliyuncs.com/sm.jpg"></video>
+                </div>
+                <div class="mt-2 title">失眠的预防与治疗</div>
+            </div>
+            <div class="col-6 ">
+                <div class="video tc">
+                    <video width="100%" src="http://ssyl.oss-cn-shenzhen.aliyuncs.com/sm.mp4"
+                           poster="http://ssyl.oss-cn-shenzhen.aliyuncs.com/sm.jpg"></video>
+                </div>
+                <div class="mt-2 title">焦虑症的预防与治疗</div>
+            </div>
+        </li>
+        <li class="row mx-0 mt-2">
+            <div class="col-6 mb-0 ">
+                <div class="video tc">
+                    <video width="100%" controls="controls" src="http://ssyl.oss-cn-shenzhen.aliyuncs.com/jsfl.mp4"
+                           poster="http://ssyl.oss-cn-shenzhen.aliyuncs.com/jsfl.jpg"></video>
+                </div>
+                <div class="mt-2 title">精神分裂症的预防与治疗</div>
+            </div>
+            <div class="col-6 ">
+                <div class="video tc">
+                    <video width="100%" controls="controls" src="http://ssyl.oss-cn-shenzhen.aliyuncs.com/qp.mp4"
+                           poster="http://ssyl.oss-cn-shenzhen.aliyuncs.com/qp.jpg"></video>
+                </div>
+                <div class="mt-2 title">强迫症的预防与治疗</div>
+            </div>
+        </li>
+    </ul>
+
+    <div class="item-section6">
+        <img class="w-100" src="img/page/img1.jpg">
+    </div>
+
+    <!-- CN脑神经多维平衡体系 -->
+    <div class="item item-section7 mt-3">
+        <ul class="row mx-0 m0">
+            <li class="col-6 px-0 h5 btn-green mb-0 pl-1 text-white lt-title">CN脑神经多维平衡体系</li>
+            <li class="col-6 px-0 btn-green">
+                <a href="tel:020-3919 9120" class="row btn-green mx-0">
+                    <span class="iconfont icon-tel tr px-0 col-3 mt-1"></span>
+                    <ul class="col-9 tel-txt">
+                        <li>一键免费通话</li>
+                        <li>020-3619 9120</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+
+        <div class="equipment-txt txt-green">引进尖端设备 诊断更精准</div>
+
+        <ul class="row information">
+            <li class="col-5 pr-0">
+                <div class="">
+                    <img src="img/page/instrument.jpg" class="w-100">
+                </div>
+            </li>
+            <li class="col-7 px-0">
+                <div class="ml-2">
+                    <p class="mb-0 py-2 px-1 theme-txt  mt-3">
+                        广州益寿医院精神科引进美国CN脑神经检测仪，可5分钟快速、精准定位脑内神经递质，对症治疗心理或精神障碍等各种疾病。<span
+                            class="error">【详情】</span></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- 疗法介绍 -->
+    <div class="item item-section8 mt-3">
+        <ul class="row mx-0 m0">
+            <li class="col-6 px-0 h5 btn-green mb-0 pl-1 text-white lt-title">疗法介绍</li>
+            <li class="col-6 px-0 btn-green">
+                <a href="tel:020-3919 9120" class="row btn-green mx-0">
+                    <span class="iconfont icon-tel tr px-0 col-3 mt-1"></span>
+                    <ul class="col-9 tel-txt">
+                        <li>一键免费通话</li>
+                        <li>020-3619 9120</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+
+        <div class="equipment-txt">国际前沿精神疾病诊疗技术—<span class="txt-gold">CN脑神经多维平衡体系</span></div>
+
+        <ul class="nav nav-tabs" id="equipment-tab">
+            <li><a href="#check" class="active">检查</a></li>
+            <li><a href="#insomnia">失眠抑郁</a></li>
+            <li><a href="#spirit">精神疾病</a></li>
+            <li><a href="#psychological">心理疾病</a></li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane active" id="check">
+
+                <!-- 检查 -->
+
+                <ul class="tab-list row">
+                    <li class="col-5">
+                        <img  class="w-100" src="img/page/check-pic1.jpg">
+                    </li>
+                    <li class="col-7 mt-1">
+                        <h5>美国CN神经检测仪</h5>
+                        <p class="mt-2">美国CN脑神经检测仪仅需5分钟采集脑神经递质信号，利用强大数据库，定量检测中枢神经递质GABA(γ-氨基丁酸)、Glu(谷氨酸)、5-HT(5-羟色胺)、Ach(乙酰胆碱)、NE(去甲肾上腺素)、DA(多巴胺)等15种神经递质功能，准确定位大脑中受损神经元所在的区域节省就诊时间。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="tab-pane" id="insomnia">
+                <ul class="tab-list row">
+
+                    <!-- 失眠抑郁 -->
+                    <li class="col-5">
+                        <img class="w-100" src="img/page/insomnia-pic1.jpg">
+                    </li>
+                    <li class="col-7">
+                        <h5>CN脑神经多维平衡疗法</h5>
+                        <p class="mt-1">“CN-脑神经多维平衡疗法”采用先进仪器与现代基因技术等西医最新科技，传递高效药物，全面修复大脑神经，促进脑神经递质恢复平衡。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+                <ul class="tab-list row">
+                    <li class="col-5">
+                        <img class="w-100" src="img/page/insomnia-pic2.jpg">
+                    </li>
+                    <li class="col-7">
+                        <h5>SOT自血疗法</h5>
+                        <p class="mt-1">迅速激活恢复人体代谢，排除大脑血液毒素、垃圾、炎症组织，修复衰老、病变的细胞，增强体内抗氧化酶活性，激活免疫，从根源上彻底杜绝失眠、抑郁、等精神疾病的复发。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="tab-pane" id="spirit">
+
+                <!-- 精神疾病 -->
+                <ul class="tab-list row">
+                    <li class="col-5">
+                        <img class="w-100" src="img/page/spirit-pic1.jpg">
+                    </li>
+                    <li class="col-7">
+                        <h5>SOT自血疗法</h5>
+                        <p class="mt-1">迅速激活恢复人体代谢，排除大脑血液毒素、垃圾、炎症组织，修复衰老、病变的细胞，增强体内抗氧化酶活性，激活免疫，从根源上彻底杜绝失眠、抑郁、等精神疾病的复发。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+                <ul class="tab-list row">
+                    <li class="col-5">
+                        <img class="w-100" src="img/page/spirit-pic2.jpg">
+                    </li>
+                    <li class="col-7">
+                        <h5>CN脑神经多维平衡疗法</h5>
+                        <p class="mt-1">“CN-脑神经多维平衡疗法”采用先进仪器与现代基因技术等西医最新科技，传递高效药物，全面修复大脑神经，促进脑神经递质恢复平衡。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+                <ul class="tab-list row">
+                    <li class="col-5">
+                        <img class="w-100" src="img/page/spirit-pic3.jpg">
+                    </li>
+                    <li class="col-7">
+                        <h5>CN立体定向植入技术</h5>
+                        <p class="mt-1">CN-立体定向植入技术专注于对身体的特定部分进行立体定向治疗，在治疗中，主要是按人体神经分布走向选择靶点，将脑蛋白合成的神经线植入到皮下，不同病种。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="tab-pane" id="psychological">
+
+                <!-- 心理疾病 -->
+                <ul class="tab-list row">
+                    <li class="col-5">
+                        <img class="w-100" src="img/page/psychological-pic1.jpg">
+                    </li>
+                    <li class="col-7">
+                        <h5>CN脑神经多维平衡疗法</h5>
+                        <p class="mt-1">“CN-脑神经多维平衡疗法”采用先进仪器与现代基因技术等西医最新科技，传递高效药物，全面修复大脑神经，促进脑神经递质恢复平衡。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+                <ul class="tab-list row">
+                    <li class="col-5">
+                        <img class="w-100" src="img/page/psychological-pic2.jpg">
+                    </li>
+                    <li class="col-7">
+                        <h5>心理辅导</h5>
+                        <p class="mt-1">主要是通过语言给予患者相应的心理、情绪方面的引导。针对患者不同的病症和BN治疗的不同阶段，以准确鲜明生动、灵活亲切、适当合理的语言引导患者描述症状。<span class="error">【了解详情】</span></p>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <img class="w-100" src="img/page/jstu6.png">
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $('#equipment-tab a.active').tab('show');
+            })
+            $('#equipment-tab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            })
+        </script>
+
+    </div>
+
+    <div class="item item-section9">
+        <div class="step-detail mt-3 w-100 tc">
+            <a href="#">CN脑神经多维平衡体系 详细步骤&gt;&gt;</a>
+        </div>
+
+        <ul class="row mx-0 m0  mt-3">
+            <li class="col-6 px-0 h5 btn-green mb-0 pl-1 text-white lt-title">学术研究</li>
+            <li class="col-6 px-0 btn-green">
+                <a href="tel:020-3919 9120" class="row btn-green mx-0">
+                    <span class="iconfont icon-tel tr px-0 col-3 mt-1"></span>
+                    <ul class="col-9 tel-txt">
+                        <li>一键免费通话</li>
+                        <li>020-3619 9120</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+
+        <!-- 图片切换 -->
+
+        <div class="tab-content mt-3">
+            <div class="tab-pane active" id="img1"><img class="w-100" src="img/page/academic-research-l1.jpg"></div>
+            <div class="tab-pane" id="img2"><img class="w-100" src="img/page/academic-research-l2.jpg"></div>
+            <div class="tab-pane" id="img3"><img class="w-100" src="img/page/academic-research-l3.jpg"></div>
+            <div class="tab-pane" id="img4"><img class="w-100" src="img/page/academic-research-l4.jpg"></div>
+        </div>
+
+        <ul class="nav nav-tabs row mx-0 mt-2" id="img-tab">
+            <li class="col-3 px-0 active"><a href="#img1"><img class="w-100" src="img/page/academic-research-s1.jpg"></a></li>
+            <li class="col-3 px-0"><a href="#img2"><img class="w-100" src="img/page/academic-researchl-s2.jpg"></a></li>
+            <li class="col-3 px-0"><a href="#img3"><img class="w-100" src="img/page/academic-researchl-s3.jpg"></a></li>
+            <li class="col-3 px-0"><a href="#img4"><img class="w-100" src="img/page/academic-researchl-s4.jpg"></a></li>
+        </ul>
+
+
+        <script>
+            $(function () {
+                $('#img-tab a.active').tab('show');
+            });
+            $('#img-tab a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            })
+
+       </script>
+    </div>
+
+    <!-- 医院概况 -->
+    <div class="item item-section10">
+
+        <ul class="row mx-0 m0  mt-3">
+            <li class="col-6 px-0 h5 btn-green mb-0 pl-1 text-white lt-title">医院概况</li>
+            <li class="col-6 px-0 btn-green">
+                <a href="tel:020-3919 9120" class="row btn-green mx-0">
+                    <span class="iconfont icon-tel tr px-0 col-3 mt-1"></span>
+                    <ul class="col-9 tel-txt">
+                        <li>一键免费通话</li>
+                        <li>020-3619 9120</li>
+                    </ul>
+                </a>
+            </li>
+        </ul>
+
+
+        <ul class="nav nav-tabs row mx-0 tc mt-3" id="general-situation">
+            <li class="col-4 px-0"><a href="#surroundings" class="active">医院环境</a></li>
+            <li class="col-4 px-0"><a href="#honor">荣誉资质</a></li>
+            <li class="col-4 px-0"><a href="#charitable-activities">公益活动</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="surroundings">
+                <!--医院环境-->
+
+                <ul class="mt-3 img-list">
+                    <li class="row">
+                        <div class="col-6"><img class="w-98" src="img/page/enviroment-pic1.jpg"></div>
+                        <div class="col-6"><img class="w-98" src="img/page/enviroment-pic2.jpg"></div>
+                    </li>
+                    <li class="row">
+                        <div class="col-6"><img class="w-98" src="img/page/enviroment-pic3.jpg"></div>
+                        <div class="col-6"><img class="w-98" src="img/page/enviroment-pic4.jpg"></div>
+                    </li>
+                    <li class="row">
+                        <div class="col-6"><img class="w-98" src="img/page/enviroment-pic5.jpg"></div>
+                        <div class="col-6"><img class="w-98" src="img/page/enviroment-pic6.jpg"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-pane" id="honor"><!--荣誉资质-->
+                <ul class="mt-3 img-list">
+                    <li class="row">
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer1.jpg"></div>
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer2.jpg"></div>
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer3.jpg"></div>
+                    </li>
+                    <li class="row mt-2">
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer4.jpg"></div>
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer5.jpg"></div>
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer6.jpg"></div>
+                    </li>
+                    <li class="row mt-2">
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer7.jpg"></div>
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer8.jpg"></div>
+                        <div class="col-4"><img class="w-98" src="img/page/ensuer9.jpg"></div>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="tab-pane" id="charitable-activities"><!--公益活动-->
+                <ul class="mt-3 charitable-activities-list">
+                    <li class="row mx-0">
+                        <div class="col-5 px-0">
+                            <div class="pb-1"><img class="w-100" src="img/page/consultation1.jpg"></div>
+                            <div><img class="w-100" src="img/page/consultation2.jpg"></div>
+                        </div>
+                        <ul class="col-7 pl-1 pr-0">
+                            <li><img class="w-100" src="img/page/consultation3.jpg"></li>
+                            <li class="row mx-0 mt-1">
+                                <div class="col-6 px-0"><img class="w-100" src="img/page/consultation4.jpg"></div>
+                                <div class="col-6 pl-1 pr-0"><img class="w-100" src="img/page/consultation5.jpg"></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="row mt-1">
+                        <div class="col-7 px-0">
+                            <img class="w-100" src="img/page/consultation6.jpg">
+                        </div>
+                        <div class="col-5 pl-1 pr-0">
+                           <img class="w-100" src="img/page/consultation7.jpg">
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $('#general-situation a.active').tab('show');
+            })
+            $('#general-situation a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            })
+
+        </script>
+
+    </div>
+
+    <!-- 预约挂号 -->
+    <div class="item-section11 mt-3 tc">
+
+        <h6>广州益寿医院 预约挂号平台</h6>
+        <p class="error desc-text mt-1">*通过网络、手机挂号，可享优先就诊权</p>
+        <p class="error desc-text">（本网站已加密，保证患者隐私）</p>
+
+        <form class="form-horizontal mt-2 pt-3 mb-3" >
+            <div class="form-group row mx-0">
+                <label for="inputEmail3" class="col-4 control-label"><span class="iconfont icon-user"></span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+                <div class="col-8 mt-1">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row mx-0">
+                <label for="inputPassword3" class="col-4 control-label"><span class="iconfont icon-f-tel"></span>联系电话</label>
+                <div class="col-8 mt-1">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group row mx-0">
+                <label  class="col-4 control-label"><span class="iconfont icon-desc"></span>疾病描述</label>
+                <div class="col-8">
+                     <textarea id="desc" class="form-control w-100" name=""></textarea>
+                </div>
+            </div>
+
+            <!-- 咨询按钮 -->
+            <ul class="form-group btns row mx-0 tc">
+                <li class="col-6 tr"><a href="#" class="btn-seset">重新填写</a></li>
+                <li class="col-6 tl"><a href="#" class="btn-submit">点击提交</a></li>
+            </ul>
+        </form>
+    </div>
+
+
+    <footer class="ask">
+        <h4 id="talk-txt" class="tc">您与健康只差一个电话</h4>
+        <img class="imgW100" src="img/page/border.jpg">
+        <h5 class="tc">点击即可免费通话</h5>
+        <ul class="row icons mt-2">
+            <li class="col-3">
+                <a class="db" href="#">
+                    <div class="icon-bg dialogue">
+                        <span class="iconfont icon-dialogue"></span>
+                        <div class="txt">问病情</div>
+                    </div>
+                </a>
+            </li>
+            <li class="col-3">
+                <a class="db" href="#">
+                    <div class="icon-bg therapy">
+                        <span class="iconfont icon-therapy"></span>
+                        <div class="txt">问病情</div>
+                    </div>
+                </a>
+            </li>
+            <li class="col-3">
+                <a class="db" href="#">
+                    <div class="icon-bg doctors">
+                        <span class="iconfont icon-doctors"></span>
+                        <div class="txt">问病情</div>
+                    </div>
+                </a>
+            </li>
+            <li class="col-3">
+                <a class="db" href="#">
+                    <div class="icon-bg money">
+                        <span class="iconfont icon-money"></span>
+                        <div class="txt">问病情</div>
+                    </div>
+                </a>
+
+            </li>
+        </ul>
+
+        <!-- 底部 nav导航 -->
+        <ul class="row footer-nav">
+            <li class="col-3" role="presentation"><a href="#">网站首页</a></li>
+            <li class="col-3 box" role="presentation"><a href="#">权威技术</a></li>
+            <li class="col-3" role="presentation"><a href="#">音乐治疗</a></li>
+            <li class="col-3" role="presentation"><a href="#">返回顶部</a></li>
+        </ul>
+
+        <ul class="text-content tc">
+            <h3>广州益寿医院精神科</h3>
+            <li>专注失眠抑郁、精神疾病的研究与治疗</li>
+            <li>24小时健康热线020-36199120</li>
+            <li>就诊地址：广州白云区三元里棠下益寿路68号</li>
+        </ul>
+
+    </footer>
+
+    <!--<footer class="mt-5 mx-3">
+        <div class="row mx-0 mb-3">
+            <div class="col-5 px-0"><img src="images/map.jpg" class="w-100"></div>
+            <div class="col-7 px-0">
+                <div class="row mx-0">
+                    <div class="col-2 px-0"><img src="images/clock.jpg" class="w-100"></div>
+                    <div class="col-10 px-0">
+                        <p class="mb-0 pl-2 h6">门诊时间（节假日无休）</p>
+
+                        <p class="mb-0 pl-2 mt-2 text-green">08:00—18:00</p>
+                    </div>
+                </div>
+                <div class="row mx-0 mt-2">
+                    <div class="col-2 px-0"><img src="images/location.jpg" class="w-100"></div>
+                    <div class="col-10 px-0">
+                        <p class="mb-0 pl-2 h6">医院地址：</p>
+
+                        <p class="mb-0 pl-2 mt-2 text-green">深圳市罗湖区笋岗东路3013号长虹大厦</p>
+                    </div>
+                </div>
+                <div class="row mx-0 mt-2">
+                    <div class="col-6 px-0 text-center">
+                        <a href="javascript:;" class="btn btn-sm btn-green">查看地图&gt;</a>
+                    </div>
+                    <div class="col-6 px-0 text-center">
+                        <a href="javascript:;" class="btn btn-sm btn-green">返回顶部&gt;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text-center">QQ：1173259284 官方微信：szhzjyy</p>
+
+        <p class="text-center">电话：0755-85212177</p>
+
+        <p class="text-center"><a href="#" class="text-dark">电脑版</a> | <a class="text-dark" href="/">手机版</a></p>
+    </footer>-->
+
+
+</div>
+
+
+<script>
+    /* 根据屏幕设置字体大小 */
+    (function (doc, win) {
+        var docEl = doc.documentElement,  //文档根标签
+                resizeEvent = 'orientationchange' in window ? 'orientationchang' : 'resize'; //viewport变化事件源
+        var rescale = function () {
+            //重置方法
+            win.clientWidth = doc.getElementById('container').clientWidth;
+            if (!win.clientWidth) return;
+            // 改变DOM根节点fontSize大小的值;
+            // (屏幕宽度/设计图宽度) = 缩放或扩大的比例值;
+            docEl.style.fontSize = 16 * (win.clientWidth / 320) + 'px';
+        };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvent, rescale, false);
+        doc.addEventListener('DOMContentLoaded', rescale, false);
+    })(document, window);
+</script>
+
+<script>
+    $(window).resize(function () {
+        setW()
+    });
+    setW();
+
+    /* 动态获取可视区的width */
+    function setW() {
+        let w = $('.container').width() / 4 * 0.8;
+        $('.ask .icon-bg').css({
+            'width': w,
+            'height': w
+        })
+    }
+
+</script>
+
+</body>
+</html>
