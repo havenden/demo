@@ -49,7 +49,7 @@ body {
     padding: 0;
 }
 .inquire-box li img{
-    width: 40%;
+    width: 25%;
 }
 .inquire-box .content{
     width: 97%;
@@ -212,6 +212,27 @@ body {
 .tab-content .tab-list p{
     font-size: 0.5625rem;
     color: #231815;
+}
+
+/* item-section9 Õº∆¨«–ªª */
+.item-section9 .tab-content .tab-pane{
+    position: relative;
+}
+.item-section9 .tab-content p{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.8);
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.6rem;
+    width: 100%;
+    color: #fff;
+}
+
+
+#charitable-activities p{
+    font-size: 0.75rem;
+    text-indent: 2em;
 }
 
 /* œÍœ∏≤Ω÷Ë */
