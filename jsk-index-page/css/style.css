@@ -1,0 +1,357 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,div,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dt,dd,em,i,span,img,a,b,input,label{ margin:0; padding:0; font-weight:normal; font-family: Arial, "microsoft yahei";}
+img{ border:none; margin: 0; padding: 0; vertical-align: top;}
+ul,li,ol{ list-style-type:none;}
+
+body{ width: 16rem; background: #f7f7f7; margin: 0 auto;}
+
+input,button{ font-family:"microsoft yahei";}
+a{ text-decoration: none;}
+a:link,a:visited{ text-decoration: none;}
+a:hover,a:active{ text-decoration: none;}
+input,button,select,textarea{ outline:none;}
+
+
+/*去除苹果默认按钮样式*/
+input[type="button"], input[type="submit"], input[type="reset"] {-webkit-appearance: none;}
+textarea { -webkit-appearance: none;}
+
+/*去除苹果默认圆角样式*/
+.button{ border-radius: 0;}
+
+
+/*去除Chrome等浏览器文本框默认发光边框*/
+input:focus, textarea:focus {
+	outline: none;
+}
+/*去掉高光样式*/
+input:focus{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-user-modify:read-write-plaintext-only;
+}
+
+
+/*去除IE10+浏览器文本框后面的小叉叉*/
+input::-ms-clear {
+	display: none;
+}
+
+
+/*禁止多行文本框textarea拖拽*/
+textarea {
+	resize: none;
+}
+
+/*元素的内边距和边框不再会增加它的宽度*/
+.bobox{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.left{ float:left;}
+.right{ float:right;}
+.clear{ clear: both;}
+
+/*清除浮动终极版（在需要清除浮动的外框加个clearfix类）*/
+.clearfix:after {
+	content:"\200B";
+	display:block;
+	height:0;
+	clear:both;
+}
+.clearfix {*zoom:1;}/*IE/7/6*/
+
+/*当页面等于或小于320执行以下代码*/
+@media screen and (min-width: 320px){
+	html{ font-size:20px;}
+}
+
+/*当页面等于或小于360执行以下代码*/
+@media screen and (min-width: 360px){
+	html{ font-size: 22.5px;}
+}
+
+/*当页面等于或小于375执行以下代码*/
+@media screen and (min-width: 375px){
+	html{ font-size:23.4375px;}
+}
+
+/*当页面等于或小于401执行以下代码*/
+@media screen and (min-width: 401px){
+	html{ font-size:25.0625px;}
+}
+
+/*当页面等于或小于414执行以下代码*/
+@media screen and (min-width: 414px){
+	html{ font-size:25.875px;}
+}
+
+/*当页面等于或小于425执行以下代码*/
+@media screen and (min-width: 425px){
+	html{ font-size:26.5625px;}
+}
+
+/*当页面等于或小于428执行以下代码*/
+@media screen and (min-width: 428px){
+	html{ font-size: 26.75px;}
+}
+
+/*当页面等于或小于441执行以下代码*/
+@media screen and (min-width: 441px){
+	html{ font-size: 27.5625px;}
+}
+
+/*当页面等于或小于481执行以下代码*/
+@media screen and (min-width: 481px){
+	html{ font-size: 30.0625px;}
+}
+
+/*当页面等于或小于569执行以下代码*/
+@media screen and (min-width: 569px){
+	html{ font-size: 35.5625px;}
+}
+
+/*当页面等于或小于641执行以下代码*/
+@media screen and (min-width: 641px){
+	html{ font-size: 40.0625px;}
+}
+
+
+
+header img, footer img, .menu img, .category img, .dynamics img, .expert img, .brand img{
+	width: 100%;
+}
+
+.register1 h1, .category h1, .dynamics h1, .expert h1, .brand h1 {
+	color: #1a191e;
+	font-size: 0.7rem;
+	line-height: 2rem;
+	height: 2rem;
+	text-indent: 0.5rem;
+	overflow: hidden;
+}
+.register1 h1 b, .category h1 b, .dynamics h1 b, .expert h1 b, .brand h1 b {
+	width: 0.3rem;
+	height: 2.5rem;
+	background: #2ca3db;
+	display: inline-block;
+	float: left;
+}
+.register1 h1 span, .category h1 span, .dynamics h1 span, .expert h1 span, .brand h1 span {
+	color: #aeadad;
+	font-size: 0.55rem;
+	padding-left: 0.4rem;
+}
+
+.aTip ul {
+	width: 2.85rem;
+	position: absolute;
+	margin: -0.8rem 0 0 7rem;
+}
+.aTip li {
+	width: 0.45rem;
+	height: 0.45rem;
+	background: #dbdbdb;
+	display: block;
+	border-radius: 100px;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 0.34rem;
+}
+.aTip li.on{ background: #fa3141;}
+
+
+.menu ul{ display: flex;}
+.menu a {
+	width: 5.35rem;
+	line-height: 1.75rem;
+	text-align: center;
+	color: #333;
+	font-size: 0.6rem;
+	float: left;
+	background: white;
+	display: block;
+	margin: 4px 4px 0 0;
+}
+.menu a img{ width: 1rem; padding: 0.35rem 0.2rem 0;}
+.menu a:nth-child(3),.menu a:nth-child(6){ margin-right: 0;}
+
+
+.category ul{ background: white; padding: 0 0.5rem 1rem;}
+.category a {
+	width: 3rem;
+	float: left;
+	color: #333;
+	font-size: 0.55rem;
+	display: block;
+	float: left;
+	text-align: center;
+	margin: 0.75rem 1rem 0 0;
+}
+.category a:nth-child(4),
+.category a:nth-child(8),
+.category a:nth-child(12) {
+	margin-right: 0;
+}
+
+
+.dynamics dl {
+	border-bottom: solid 1px #e2e2e2;
+	padding: 1rem 0.65rem;
+	background: white;
+}
+.dynamics dt{ width: 5.45rem; float: left;}
+.dynamics dd{ width: 8.5rem; float: right;}
+.dynamics dd h2{ color: #333; font-size: 0.6rem; font-weight: bold; padding-bottom: 0.2rem;}
+.dynamics dd p{ color: #666; font-size: 0.55rem;}
+.dynamics dd p a{ color: #ff2041;}
+
+
+.carousel .bd li {
+	height: 12.8rem;
+	box-sizing: border-box;
+	padding: 1.25rem 0.5rem 1.1rem 8rem;
+}
+.carousel .bd li h2{ color: #014ea0; font-size: 0.75rem; font-weight: bold;}
+.carousel .bd li h2 small{ color: black; font-size: 0.55rem; padding-left: 0.75rem;}
+.carousel .bd li h3{ font-size: 0.6rem; color: #333; line-height: 0.9rem; padding: 0.75rem 0;}
+.carousel .bd li p{ color: #333; font-size: 0.55rem; line-height: 0.95rem;}
+.carousel .bd li p span{ color: #014ea0; font-size: 0.6rem; font-weight: bold;}
+.carousel .bd li p a{ color: #fa3141;}
+.carousel .bd li > a {
+	width: 4.25rem;
+	line-height: 1.5rem;
+	text-align: center;
+	color: white;
+	font-size: 0.6rem;
+	display: block;
+	border-radius: 5px;
+	background: #fa3141;
+	margin-top: 0.75rem;
+}
+.carousel .bd li a img{ width: 0.9rem; padding: 0.35rem 0.25rem 0 0;}
+.carousel .bd ul.baggrund1{ background: url(/images/20170826/expert-pic1.jpg) no-repeat; background-size: 100%;}
+.carousel .bd ul.baggrund2{ background: url(/images/20170826/expert-pic2.jpg) no-repeat; background-size: 100%;}
+
+.carousel .hd ul{ width: 1.75rem; margin: 0.65rem auto 0.75rem;}
+.carousel .hd li {
+	width: 0.5rem;
+	height: 0.5rem;
+	background: #c0c0c0;
+	border-radius: 100px;
+	float: left;
+	margin-right: 0.35rem;
+}
+.carousel .hd li.on{ background: #2ca3db;}
+
+
+.branddl {
+	background: url(/images/20170826/brand-pic2.jpg);
+	background-size: 100%;
+	padding: 1rem 0.5rem;
+}
+.branddl dl {
+	width: 100%;
+	height: 5.35rem;
+	background: white;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 0.6rem;
+	margin-bottom: 0.5rem;
+}
+.branddl dt{ width: 6rem;}
+.branddl dd{ width: 7rem;}
+.branddl dd h2{ color: #ff6634; font-size: 0.65rem; font-weight: bold; padding: 0.4rem 0 0.35rem;}
+.branddl dd p{ color: #333; font-size: 0.55rem;}
+
+
+.register1 li{ padding-bottom: 0.5rem;}
+.register1 li p {
+	width: 3.5rem;
+	float: left;
+	color: #333;
+	font-size: 0.6rem;
+	line-height: 1.75rem;
+}
+.register1 li input[type=text]{
+	width: 11.5rem;
+	line-height: 1.7rem;
+	float: right;
+	box-sizing: border-box;
+	border: solid 1px #cbcbcb;
+	border-radius: 3px;
+	padding: 0 0.5rem;
+	display: block;
+	font-size: 0.6rem;
+}
+.register1 li input[type=text].baggrund1 {
+	background: url(/images/20170826/register-bg1.jpg) no-repeat;
+	background-size: 100%;
+	border: none;
+	height: 1.85rem;
+}
+.register1 li input[type=text].baggrund2 {
+	background: url(/images/20170826/register-bg2.jpg) no-repeat;
+	background-size: 100%;
+	border: none;
+	height: 1.85rem;
+}
+.register1 a {
+	width: 15rem;
+	line-height: 2rem;
+	background: #fa3141;
+	color: white;
+	text-align: center;
+	font-size: 0.75rem;
+	display: block;
+	border-radius: 3px;
+	margin-top: 0.6rem;
+}
+.register1 a img{ width: 1rem; padding: 0.5rem 0.25rem 0;}
+
+
+footer{ padding: 0.9rem 0.5rem 1rem;}
+footer dt{ width: 3.7rem; float: left;}
+footer dd{ width: 10.5rem; float: right; padding-top: 0.3rem;}
+footer dd li img{ width: 0.9rem; float: left; padding: 0.15rem 0.1rem 0 0;}
+footer dd li p{ float: left; color: black; font-size: 0.5rem;}
+footer dd li p span{ color: #014ea0; font-size: 0.65rem; font-weight: bold;}
+footer dd > p{ color: #333; font-size: 0.55rem; padding: 0.3rem 0 0 0.2rem;}
+
+/*点击弹出隐藏层*/
+.mask {
+	width: 16rem;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	position: fixed;
+	z-index: 999999;
+	top: 0;
+}
+.mask ul.neirong {
+	width: 13rem;
+	background: white;
+	border-radius: 20px;
+	position: absolute;
+	box-sizing: border-box;
+	padding: 1.25rem 1rem;
+	margin: 8rem 0 0 1.5rem;
+}
+.mask ul.neirong a {
+	width: 3rem;
+	float: left;
+	color: #333;
+	font-size: 0.55rem;
+	display: block;
+	float: left;
+	text-align: center;
+	margin-right: 1rem;
+}
+.mask ul.neirong a:nth-of-type(3),
+.mask ul.neirong a:nth-of-type(6){ margin-right: 0;}
+.mask ul.neirong a:nth-of-type(1),
+.mask ul.neirong a:nth-of-type(2),
+.mask ul.neirong a:nth-of-type(3){ margin-bottom: 1rem;}
+.mask img{width: 100%}

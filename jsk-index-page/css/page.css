@@ -1,0 +1,426 @@
+@import "common.css";
+@import "iconfont.css";
+/*@import "style.css";*/
+
+body {
+    font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
+    color: #595959
+}
+
+.top-position .hospital-name{
+    height: 2.625rem;
+    line-height: 2.625rem;
+    background: #f5f5f5;
+}
+.top-position span{
+    font-size: 1rem;
+}
+.nav-btns .btn{
+    width: 97%
+}
+
+/* ����֢״��ҳ */
+#inquire-tab li{
+    width: 50%;
+    height: 2.85rem;
+    line-height: 2.85rem;
+    background: #6e7375;
+    text-align: center;
+    font-size: 1.25rem;
+}
+#inquire-tab span{
+    font-size: 2rem;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+#inquire-tab  a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #fff;
+}
+#inquire-tab  .active{
+    background: #0f6848;
+}
+
+.inquire-box li{
+    color: #fff;
+    margin: 0.1rem 0;
+    padding: 0;
+}
+.inquire-box li img{
+    width: 25%;
+}
+.inquire-box .content{
+    width: 97%;
+    margin: auto;
+    padding: 0.5rem 0;
+}
+#isease-icon-list .disease-desc{
+    padding: 0.2rem 0
+}
+#symptom-icon-list .content{
+    padding: 2rem 0;
+}
+
+/* item-section */
+.item .lt-title{
+   line-height: 3.2rem;
+}
+.item .icon-tel{
+    font-size: 2rem;
+    color: #f4ea2a;
+}
+.item .tel-txt{
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem 0.5rem 0;
+    text-align: right;
+}
+
+#isease-icon-list .bg-color1{background: #31a869}
+#isease-icon-list .bg-color2{background: #048d5b}
+#isease-icon-list .bg-color3{background: #57b8ae}
+#isease-icon-list .bg-color4{background: #6ec3ba}
+#isease-icon-list .bg-color5{background: #747776}
+#isease-icon-list .bg-color6{background: #90a4a2}
+
+#symptom-icon-list .bg-color1{background: #fb880c}
+#symptom-icon-list .bg-color2{background: #22c493}
+#symptom-icon-list .bg-color3{background: #20b2ea}
+#symptom-icon-list .bg-color4{background: #6589d9}
+#symptom-icon-list .bg-color5{background: #5f52a0}
+#symptom-icon-list .bg-color6{background: #faad5a}
+#symptom-icon-list .bg-color7{background: #23d18c}
+#symptom-icon-list .bg-color8{background: #39c0ed}
+#symptom-icon-list .bg-color9{background: #99b5f3}
+#symptom-icon-list .bg-color10{background: #8f82bc}
+
+
+/* ������Ѷ */
+.information .theme-title{
+    font-size: 0.75rem;
+    color: #107b54
+}
+.information .theme-txt{
+    font-size: 0.68rem;
+}
+.info-list li{
+    padding: 0.28rem 0;
+    font-size: 0.75rem;
+    border-bottom: 1px dashed #828282;
+}
+
+/* �����Ŷ� */
+.doctor-info .doctor-name{
+    font-size: 1.125rem;
+    color: #d89741;
+
+}
+.doctor-info .job{
+    font-size: 0.75rem;
+    color: #231815;
+}
+.doctor-info .job-title{
+    font-size: 0.75rem;
+    color: #231815;
+    padding: 0.3rem;
+}
+.doctor-info .job-title img{
+    margin-right: 0.3rem;
+}
+.doctor-info .good-at-txt{
+    font-size: 0.5625rem;
+    color: #231815;
+}
+
+/* ��Ƶ���� */
+
+.item-section5 a{
+    font-size: 0.65625rem;
+    color: #231815;
+}
+.w-98{
+    width: 98%
+}
+
+.item-section7 .lt-title{
+    font-size: 0.9rem;
+    line-height: 3.2rem;
+}
+.item-section7 .equipment-txt{
+    font-size: 0.8rem;
+    padding: 0.78125rem 0;
+    color: #156d4d;
+}
+
+/* item-section  �Ʒ����� */
+.item-section8 .equipment-txt{
+    font-size: 0.83rem;
+    padding: 0.78125rem 0;
+}
+.item-section8 .txt-gold{
+    color: #7a7516;
+}
+
+/* tab */
+#equipment-tab a{
+    color: #231815;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: #fff799;
+    padding: 0.3rem 0.81rem;
+}
+#equipment-tab li{
+   width: 24%;
+    margin: 0.5rem 0.1rem;
+    font-size: 0.75rem;
+    position: relative;
+}
+
+#equipment-tab .active{
+    background: #10a971;
+    color: #fff;
+}
+#equipment-tab .active:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 0.2rem solid transparent;
+    border-right: 0.2rem solid transparent;
+    border-top: 0.4rem solid #10a971;
+    position: absolute;
+    bottom: -0.4rem;
+    left: 50%;
+}
+
+.item-section5 .title{
+    font-size: 0.6rem;
+}
+
+
+/* ���ƽ���  tab-list */
+.tab-list{
+    overflow: hidden;
+}
+.tab-list li{
+    float: left;
+}
+.tab-content .tab-list h5{
+    font-size: 0.75rem;
+    color: #7e7912;
+}
+.tab-content .tab-list p{
+    font-size: 0.5625rem;
+    color: #231815;
+}
+
+/* item-section9 ͼƬ�л� */
+.item-section9 .tab-content .tab-pane{
+    position: relative;
+}
+.item-section9 .tab-content p{
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.6rem;
+    width: 100%;
+    color: #fff;
+}
+
+
+#charitable-activities p{
+    font-size: 0.75rem;
+    text-indent: 2em;
+}
+
+/* ��ϸ���� */
+
+.step-detail a{
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    background: #10a971;
+    color: #fff;
+}
+
+.item-section9 .nav-tabs li{
+    width: 20%;
+    text-align: center;
+}
+.item-section9 .nav-tabs a{
+    width:98%;
+    display: inline-block;
+}
+
+.img-list li .col-6{
+    padding: 0.1rem;
+}
+
+#general-situation a{
+    display: inline-block;
+    font-size: 1rem;
+    background: #ccc;
+    text-align: center;
+    padding: 0.5625rem 1.6rem;
+    color: #fff;
+}
+#general-situation .active{
+    background: #20b2ea;
+}
+
+
+    #talk-txt {
+        color: #3b9174;
+        font-size: 0.95rem;
+    }
+    .ask h5{
+        font-size: 0.755rem;
+    }
+
+    .ask .icons li {
+        text-align: center;
+        color: #fff;
+    }
+
+    .icon-bg {
+        border-radius: 50%;
+        padding: 0.4rem 1rem;
+    }
+
+    .ask a {
+        color: #fff;
+    }
+
+    .ask .iconfont {
+        display: inline-block;
+        font-size: 1.5rem;
+    }
+
+    .ask .txt {
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+
+    .dialogue {
+        background: #48c5d9;
+    }
+
+    .therapy {
+        background: #70c1ff;
+    }
+
+    .doctors {
+        background: #76c87c;
+    }
+
+    .money {
+        background: #39c773;
+    }
+
+    /* �ײ����� */
+    .footer-nav {
+        background: #10a971;
+    }
+
+    .footer-nav a {
+        color: #fff;
+        font-size: 0.8rem;
+        display: block;
+        width: 95%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    .footer-nav li:not(:last-child){
+        border-right: 1px solid #fff;
+    }
+    .text-content h3 {
+        font-size: 0.95rem;
+        color: #03ac6b;
+        padding-bottom: 0.2rem;
+    }
+
+    .text-content li {
+        padding: 0.1rem 0;
+        font-size: 0.8rem;
+    }
+
+
+/* ԤԼƽ̨ */
+.item-section11 h6{
+    font-size: 1rem;
+    display: inline;
+    color: #000;
+    font-weight: bold;
+}
+.item-section11 .form-horizontal{
+    border: 1px solid #ddd;
+}
+
+.item-section11 .desc-text{
+    font-size: 0.6rem;
+}
+.item-section11 .form-group .iconfont{
+    font-size: 1rem;
+    padding: 0 0.2rem;
+}
+.item-section11 .form-group label{
+    font-size: 0.75rem;
+    text-align: right;
+    color: #10a971;
+}
+.item-section11 .form-group .form-control{
+    padding: 0.4rem 0.2rem;
+    font-size: 0.7rem;
+}
+.item-section11 .btn-seset{
+    background: #626a6b;
+}
+.item-section11 .btn-submit{
+
+    background: #f98d05;
+
+}
+.item-section11 .btns a{
+    color: #fff;
+    padding: 0.4rem 1rem;
+    font-size: 0.6rem;
+    border-radius: 0.1rem;
+}
+
+.nav-tabs{
+    border: none;
+}
+.error{
+    color: red !important;
+}
+
+/*common*/
+.text-back{color: #d7d7d7;}
+.text-black{color: #000;}
+.text-green{color: #379717;}
+.bg-orange{background: #ffce22;}
+.bg-blue{background: #4cb9ce;}
+.text-orange{color: #e26c0a;}
+.border-dashed{border: dashed 1px #e4c6c7;}
+.btn-green{background: #098762;color: #fff !important;}
+.title-num{display: inline-block;padding:0.5rem;border-top-right-radius: 1rem;border-bottom-right-radius: 1rem; }
+/*header*/
+header ul.nav li{margin-bottom: 0.22rem;padding: 0;}
+header ul.nav li a{display: inline-block;width: 97%;background: #10a971;color: #fff;padding:.2rem 0;font-size: 1rem;text-decoration: none;}
+
+#medical-team .carousel-indicators{bottom: -1.5rem;}
+#medical-team .carousel-indicators li{width: 0.2rem;height: 0.2rem;border-radius: 0.1rem;background: #c9c9c9;}
+#medical-team .carousel-indicators .active{background: #ed4814;}
+
+
+
+
+
+
+
+
+
+
