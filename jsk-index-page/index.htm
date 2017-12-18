@@ -92,35 +92,102 @@
     </div>
 
     <style type="text/css">
-        .marquee{position: relative;width: 100%;max-width: 750px;margin: 0 auto;padding-top: 10px;padding-bottom: 10px;height: 26px;}
-        .marquee .d-inline-block{display: inline-block; float: left;}
-        .marquee .marquee-title{width: 20%;height: 40px;line-height:40px;background: #c20000;color: #fff; text-align: center;}
-        .marquee .marquee-body{width: 80% !important;height: 34px !important;line-height: 36px !important;position: relative;border-top: solid 1px #ccc;border-bottom: solid 1px #ccc;padding-top: 2px;padding-bottom: 2px;}
-        .txtMarquee-left .bd .tempWrap{ width:100% !important;height: 34px; }/* 用 !important覆盖SuperSlide自动生成的宽度，这样就可以手动控制可视宽度。 */
-        .txtMarquee-left .bd ul{ overflow:hidden; zoom:1; }
-        .txtMarquee-left .bd ul li{ margin-right:20px;  float:left; height:34px; line-height:34px;  text-align:left; _display:inline; width:auto !important;  }/* 用 width:auto !important 覆盖SuperSlide自动生成的宽度，解决文字不衔接问题 */
-
+        html{ overflow-y: auto;}
+        /*marquee插件的样式
+         *left和right共用一个
+        [[*/
+        .plus-mar-left{overflow:hidden; word-break:keep-all; white-space:nowrap;}
+        .plus-mar-left ul{list-style:none; margin:0; padding:0; display:inline-block; *display:inline; zoom:1;}
+        .plus-mar-left li{display:inline-block; *display:inline; zoom:1; text-indent:15px;/*line-height: 1.1rem;*/ }
+         #mar4 { height: 1.6rem;line-height:1.3rem;  margin-left: 20px; border: 1px solid #ccc; color: #595959;padding: 0.1rem 0.2rem; font-size: 0.85rem;}
+        .mar4-title{background: #c20000; color: #fff; padding: 0.2rem 0;text-align: center;font-size: 1rem;}
+        .item1 .desc-txt{ padding-top: 0.2rem;}
     </style>
-    <script type="text/javascript" src="http://4g.22356666.com/js/jquery.SuperSlide.2.1.1.js"></script>
-    <div class="marquee mx-1">
-        <div class="marquee-title d-inline-block">医院动态：</div>
-        <div class="marquee-body d-inline-block">
-            <div class="txtMarquee-left">
-                <div class="bd">
-                    <ul class="infoList">
-                        <li><a href="javascript:;" onclick="openZoosUrl()" target="_blank">全国精神患者康复工程广州站在我院启动，时间为：2017年11月1日-2017年12月31日</a></li>
-                        <li><a href="javascript:;" onclick="openZoosUrl()" target="_blank">全国精神患者康复工程广州站在我院启动，时间为：2017年11月1日-2017年12月31日</a></li>
-                        <li><a href="javascript:;" onclick="openZoosUrl()" target="_blank">全国精神患者康复工程广州站在我院启动，时间为：2017年11月1日-2017年12月31日</a></li>
+
+    <!-- 医院动态 -->
+    <div class="item1">
+        <ul class="row mx-0 mt-3">
+            <li class="col-3 px-0 pl-1 mar4-title">医院动态</li>
+            <li class="col-9 px-0 pr-1 desc-txt">
+                <div id="mar4">
+                    <ul>
+                        <li>全国精神患者康复工程广州站在我院启动，时间为：2017年11月1日-2017年12月31日</li>
                     </ul>
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
+
+
         <script type="text/javascript">
-            jQuery(".txtMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",interTime:50,trigger:"click"});
+            /**
+             　　　* @author xf.radish
+             * jQuery插件 常用效果的实现
+             */
+            (function (jQuery) {
+                jQuery.fn.extend({
+
+                    marquee:function (o) {
+                        var it = this,
+                                d = o.direction || 'left', //滚动方向 默认向左
+                                s = o.speed || 30, //速度 默认30毫秒
+                                mar = jQuery(it),
+                                mp1 = jQuery(it).children(0).attr({id:"mp1"}),
+                                marqueeFunc = getMarquee(d),
+                                marRun = marqueeFunc ? setInterval(marqueeFunc, s) : function () {
+                                    return false;
+                                };//开始滚动
+                        //鼠标悬停事件
+                        jQuery(it).hover(function () {
+                            clearInterval(marRun);
+                        }, function () {
+                            marRun = setInterval(marqueeFunc, s);
+                        })
+                        /*生成滚动函数
+                         *1.判断方向 *2.装载CSS *3.判断需不需要滚动 *4.构造函数
+                         */
+                        function getMarquee(d) {
+
+                            mar.addClass("plus-mar-left");
+                            /* var liHeight = mar[0].offsetHeight;
+                             mar.css({"line-height":liHeight + "px"});*/
+                            if (mp1[0].offsetWidth < mar[0].offsetWidth) return false;
+                            mp1.clone().attr({id:"mp2"}).appendTo(mar);
+                            marqueeFunc = function () {
+                                if (mar[0].scrollLeft >= mp1[0].scrollWidth) {
+                                    mar[0].scrollLeft = 0;
+                                } else {
+                                    mar[0].scrollLeft++;
+                                }
+                            }
+
+                            return marqueeFunc;
+                        }
+                    }
+                })
+            })(jQuery);
+
+
+            $("#mar4").marquee({
+                direction:"left",
+                speed:30
+            });
+
+
         </script>
+
     </div>
 
-    <div class="item-section1 mt-3">
+    <!-- 疾病导航 -->
+    <div class="item2">
+        <ul class="row mx-0 px-2">
+            <li class="col-6 px-2 disease-nav">疾病导航</li>
+            <li class="col-6 btn-box">
+                <div class="hot-line-btn">
+                    <span class="iconfont icon-f-tel"></span>免费热线</div></li>
+        </ul>
+    </div>
+
+    <div class="item-section1 mt-4">
         <!-- 上下分页 -->
         <ul class="nav nav-tabs" id="inquire-tab">
             <li class="active"><a href="#isease-icon-list"><span class="iconfont icon-column"></span>疾病查询</a></li>
@@ -449,6 +516,10 @@
     <!-- 视频 -->
 <div class="item-section4 mt-3">
 
+    <div class="video-title mx-1 mb-1">
+        <div class="title-btn-bg">专家讲堂</div>
+        <img class="w-10 mx-2 mb-1" src="images/video-icon.png">
+    </div>
     <div class="video tc">
         <video id="video-box" controls="controls" width="95%"  src=" http://ssyl.oss-cn-shenzhen.aliyuncs.com/yiyu.mp4"
                poster="http://ssyl.oss-cn-shenzhen.aliyuncs.com/yiyu.jpg">
@@ -459,38 +530,6 @@
 
 <ul class="item-section5 row mx-0 mt-3 tc">
 
-    <style>
-
-        .item-section5 .video-list{
-            position: relative;
-        }
-        .item-section5 .video{
-            width: 95%;
-            padding: 0.17rem;
-            background: #ccc;
-            color: #656565;
-        }
-        .item-section5 .video-title{
-            font-size: 0.4rem;
-        }
-
-        .item-section5 .active{
-            background: #10a971;
-            color: #fff;
-        }
-
-        .item-section5 .active:after{
-            content: '';
-            position: absolute;
-            top: -0.4rem;
-            left: 45%;
-            width: 0;
-            height: 0;
-            border-left: 0.25rem solid transparent;
-            border-right: 0.25rem solid transparent;
-            border-bottom: 0.5rem solid #10a971;
-        }
-    </style>
     <li class="col-3 px-0 video-list">
         <div class="video tc active mx-auto" data-src="http://ssyl.oss-cn-shenzhen.aliyuncs.com/sm.mp4"
              data-img="http://ssyl.oss-cn-shenzhen.aliyuncs.com/sm.jpg">
@@ -549,7 +588,7 @@
     <!-- CN脑神经多维平衡体系 -->
     <div class="item item-section7 mt-3">
         <ul class="row mx-0 m0">
-            <li class="col px-0 h5 btn-green mb-0 pl-1 text-white lt-title">CN脑神经多维平衡体系</li>
+            <li class="col px-0 h5 btn-green mb-0 pl-1 text-white lt-title">新一代CN脑神经检测仪</li>
             <li class="col-5 px-0 btn-green">
                 <a href="tel:020-3919 9120" class="row btn-green mx-0">
                     <span class="iconfont icon-tel tr px-0 col-3 mt-1"></span>
@@ -561,30 +600,22 @@
             </li>
         </ul>
 
-        <style>
-
-            .item-section7 .information{
-                background: url('images/instrument-bg.png') no-repeat;
-                background-size: 100% 100%;
-                text-align: right;
-
-            }
-            .item-section7 .information .theme-txt{
-                width: 50%;
-                margin-left: auto;
-                margin-right: 0;
-                text-align: justify;
-            }
-        </style>
-
-        <div class="information-box px-2 mt-2">
-            <div class="mx-0 pt-5 information oh">
-                <div class="pr-2">
-                    <p class="mb-0 theme-txt mt-1">1、准确率高：临床实验结果表明，该设备精确定位检测多种脑神经递质，检查精确度高达99.96%。</p>
-                    <p class="mb-0 theme-txt mt-1">2、检测时间短：通过体外扫描技术，仅仅只需5分钟，就能快速针对病情和病理进行。</p>
+        <!-- item-section7 -->
+        <ul class="row information mx-0 mt-2 mb-3">
+            <li class="col-5 pr-0">
+                <div class="lt-img">
+                    <img src="images/instrument.jpg" class="w-100" >
                 </div>
-            </div>
-        </div>
+            </li>
+            <li class="col-7 px-0 rt-content7 pt-2">
+                <div class="ml-2">
+                    <div class="mb-0 px-1 rt-title mb-2 mt-3">引进尖端设备 诊断更精准</div>
+                    <p>1、准确率高：临床实验结果表明，该设备精确定位检测多种脑神经递质，检查精确度高达99.96%.</p>
+                    <p> 2、检测时间短：通过体外扫描技术，仅仅只需5分钟，就能快速针对病情和病理进行全方位准确检查。<span class="error">【详情】</span></p>
+                </div>
+            </li>
+        </ul>
+
 
     </div>
 
@@ -657,24 +688,6 @@
                 <!-- 精神疾病 -->
                 <ul class="tab-list row mx-0 pl-2">
                     <li class="col-5 px-0">
-                        <img class="w-100" src="images/spirit-pic1.jpg">
-                    </li>
-                    <li class="col-7 px-0 pl-2 pr-1">
-                        <h5>SOT自血疗法</h5>
-                        <p class="mt-1">迅速激活恢复人体代谢，排除大脑血液毒素、垃圾、炎症组织，修复衰老、病变的细胞，增强体内抗氧化酶活性，激活免疫，从根源上彻底杜绝失眠、抑郁、等精神疾病的复发。<a href="javascript:;" onclick="openZoosUrl()" class="error">【了解详情】</a></p>
-                    </li>
-                </ul>
-                <ul class="tab-list row mx-0 pl-2">
-                    <li class="col-5 px-0">
-                        <img class="w-100" src="images/spirit-pic2.jpg">
-                    </li>
-                    <li class="col-7 px-0 pl-2 pr-1">
-                        <h5>CN脑神经多维平衡疗法</h5>
-                        <p class="mt-1">“CN-脑神经多维平衡疗法”采用先进仪器与现代基因技术等西医最新科技，传递高效药物，全面修复大脑神经，促进脑神经递质恢复平衡。<a href="javascript:;" onclick="openZoosUrl()"  class="error">【了解详情】</a></p>
-                    </li>
-                </ul>
-                <ul class="tab-list row mx-0 pl-2">
-                    <li class="col-5 px-0">
                         <img class="w-100" src="images/spirit-pic3.jpg">
                     </li>
                     <li class="col-7 px-0 pl-2 pr-1">
@@ -687,15 +700,6 @@
             <div class="tab-pane" id="psychological">
 
                 <!-- 心理疾病 -->
-                <ul class="tab-list row mx-0 pl-2">
-                    <li class="col-5 px-0">
-                        <img class="w-100" src="images/psychological-pic1.jpg">
-                    </li>
-                    <li class="col-7 px-0 pl-2 pr-1">
-                        <h5>CN脑神经多维平衡疗法</h5>
-                        <p class="mt-1">“CN-脑神经多维平衡疗法”采用先进仪器与现代基因技术等西医最新科技，传递高效药物，全面修复大脑神经，促进脑神经递质恢复平衡。<a href="javascript:;" onclick="openZoosUrl()" class="error">【了解详情】</a></p>
-                    </li>
-                </ul>
                 <ul class="tab-list row mx-0 pl-2">
                     <li class="col-5 px-0">
                         <img class="w-100" src="images/psychological-pic2.jpg">
@@ -741,6 +745,9 @@
             </li>
         </ul>
 
+        <p class="academic-research-txt mt-2">
+            作为华南地区精神病专业医院，广州益寿精神病专科医院先后与北京安定、昆明安定、上海精神卫生中心进行的技术交流，并在北京举办CN脑神经多维平衡体系技术推广大会，以及康复援助精神病患的公益事业，多次受到国内外专家的认可和赞誉。
+        </p>
         <!-- 图片切换 -->
 
         <div class="tab-content mt-3 mx-1">
@@ -819,11 +826,24 @@
                         <div class="col-6"><img class="w-98" src="images/enviroment-pic3.jpg"></div>
                         <div class="col-6"><img class="w-98" src="images/enviroment-pic4.jpg"></div>
                     </li>
-                    <li class="row mx-0 px-1 mt-1">
-                        <div class="col-6"><img class="w-98" src="images/enviroment-pic5.jpg"></div>
-                        <div class="col-6"><img class="w-98" src="images/enviroment-pic6.jpg"></div>
-                    </li>
                 </ul>
+
+                <div class="hospital-info-list">
+                    <ul class="row mx-0 px-2 hospital-info-row">
+                        <li class="col-4 px-0 hospital-info-btn"><div class="list-btn hospital">大医院</div></li>
+                        <li class="col-8 px-0 hospital-info-txt"><p>广州益寿医院建院于1983年，是首批国家特设精神专科的综合性医院。是广州市医保定点单位、国家卫计委审批单位，卫生部技术推广定点单位。</p></li>
+                    </ul>
+                    <ul class="row mx-0 px-2 hospital-info-row">
+                        <li class="col-4 px-0 hospital-info-btn"><div class="list-btn money">平价收费</div></li>
+                        <li class="col-8 px-0 hospital-info-txt"><p>所有所有收费项目，由广州市卫生局监督，院内电子屏幕公布，持医保卡看病，享受政府报销费用。</p></li>
+                    </ul>
+                    <ul class="row mx-0 px-2 hospital-info-row">
+                        <li class="col-4 px-0 hospital-info-btn"><div class="list-btn profession"> 33年专注<br>精神科诊疗</div></li>
+                        <li class="col-8 px-0 hospital-info-txt"><p>33年专注精神疾病研究与治疗，拥有一支由全国知名精神疾病专家组成的强大诊疗团。</p></li>
+                    </ul>
+                </div>
+
+
             </div>
             <div class="tab-pane" id="honor"><!--荣誉资质-->
                 <ul class="mt-3 img-list px-2">

@@ -1,6 +1,6 @@
 @import "common.css";
 @import "iconfont.css";
-/*@import "style.css";*/
+
 
 body {
     font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
@@ -19,7 +19,34 @@ body {
     width: 97%
 }
 
-/* ����֢״��ҳ */
+.item2 .disease-nav{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #10a971;
+    border-left: 7px solid #10a971;
+    padding-left: 0.7rem;
+}
+.item .btn-box{
+    text-align: right;
+    margin-top: 0.1rem;
+}
+.item2 .hot-line-btn{
+    display: inline-block;
+    background: #f98d05;
+    color: #fff;
+    font-size: 1.2rem;
+    float: right;
+    padding: 0.15rem 1rem;
+    border-radius: 0.2rem;
+
+}
+.item2 .hot-line-btn .iconfont{
+    font-size: 1.35rem;
+    margin-right: 0.1rem;
+
+}
+
+/* item-section1  疾病症状查询 */
 #inquire-tab li{
     width: 50%;
     height: 2.85rem;
@@ -96,21 +123,21 @@ body {
 #symptom-icon-list .bg-color10{background: #8f82bc}
 
 
-/* ������Ѷ */
-.information .theme-title{
+/* item-section2  */
+.item-section2 .information .theme-title{
     font-size: 0.75rem;
     color: #107b54
 }
-.information .theme-txt{
+.item-section2 .information .theme-txt{
     font-size: 0.68rem;
 }
-.info-list li{
+.item-section2 .info-list li{
     padding: 0.28rem 0;
     font-size: 0.75rem;
     border-bottom: 1px dashed #828282;
 }
 
-/* �����Ŷ� */
+/* item-section3 医生介绍 */
 .doctor-info .doctor-name{
     font-size: 1.125rem;
     color: #d89741;
@@ -133,7 +160,7 @@ body {
     color: #231815;
 }
 
-/* ��Ƶ���� */
+/* item-section4 视频 */
 
 .item-section5 a{
     font-size: 0.65625rem;
@@ -142,6 +169,8 @@ body {
 .w-98{
     width: 98%
 }
+
+/* item-section7 CN脑神经多维平衡体系 */
 
 .item-section7 .lt-title{
     font-size: 0.9rem;
@@ -153,7 +182,20 @@ body {
     color: #156d4d;
 }
 
-/* item-section  �Ʒ����� */
+.item-section7 .information .theme-txt{
+    margin-left: auto;
+    margin-right: 0;
+    text-align: justify;
+}
+.item-section7 .rt-title{
+    font-size: 1rem;
+    color: #127651;
+}
+.item-section7 .rt-content7 p{
+    font-size: 0.6rem;
+}
+
+/* item-section  疗法介绍*/
 .item-section8 .equipment-txt{
     font-size: 0.83rem;
     padding: 0.78125rem 0;
@@ -162,7 +204,7 @@ body {
     color: #7a7516;
 }
 
-/* tab */
+/* item-section8 tab */
 #equipment-tab a{
     color: #231815;
     display: inline-block;
@@ -194,12 +236,56 @@ body {
     left: 50%;
 }
 
+.item-section4 .video-title{
+    border-bottom: 1px solid #10a971;
+}
+.title-btn-bg{
+    background: url('../images/title-btn-bg.png') no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0.1rem 0.2rem;
+}
+
 .item-section5 .title{
     font-size: 0.6rem;
 }
+.item-section5 .video-list{
+    position: relative;
+}
+.item-section5 .video-list:hover{
+    cursor: pointer;
+}
+.item-section5 .video{
+    width: 95%;
+    padding: 0.17rem;
+    background: #ccc;
+    color: #656565;
+}
+.item-section5 .video-title{
+    font-size: 0.4rem;
+}
+
+.item-section5 .active{
+    background: #10a971;
+    color: #fff;
+}
+
+.item-section5 .active:after{
+    content: '';
+    position: absolute;
+    top: -0.4rem;
+    left: 45%;
+    width: 0;
+    height: 0;
+    border-left: 0.25rem solid transparent;
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.5rem solid #10a971;
+}
 
 
-/* ���ƽ���  tab-list */
+/* tab切换  tab-list */
 .tab-list{
     overflow: hidden;
 }
@@ -215,7 +301,7 @@ body {
     color: #231815;
 }
 
-/* item-section9 ͼƬ�л� */
+/* item-section9 学术研究 */
 .item-section9 .tab-content .tab-pane{
     position: relative;
 }
@@ -230,14 +316,40 @@ body {
     color: #fff;
 }
 
-
+/* item-section9 学术研究 item-section10 公益活动 */
+.item-section9 .academic-research-txt,
 #charitable-activities p{
     font-size: 0.75rem;
     text-indent: 2em;
 }
 
-/* ��ϸ���� */
-
+.item-section10 .hospital-info-list .hospital-info-btn{
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+}
+.item-section10 .hospital-info-list .hospital{
+    background: #10a971;
+    line-height:2rem;
+}
+.item-section10 .hospital-info-list .list-btn{
+    height:2rem;
+    width: 80%;
+    font-size: 0.8rem;
+    border-radius: 0.2rem;
+}
+.item-section10 .hospital-info-list .money{
+    background: #e35345;
+    line-height:2rem;
+}
+.item-section10 .hospital-info-list .profession{
+    background: #ff8500;
+    font-size: 0.6rem;
+    padding-top: 0.1rem;
+}
+.item-section10 .hospital-info-row .hospital-info-txt{
+    font-size: 0.6rem;
+}
 .step-detail a{
     display: inline-block;
     width: 100%;
@@ -262,13 +374,13 @@ body {
 #general-situation a{
     display: inline-block;
     font-size: 1rem;
-    background: #ccc;
+    background: #797777;
     text-align: center;
     padding: 0.5625rem 1.6rem;
     color: #fff;
 }
 #general-situation .active{
-    background: #20b2ea;
+    background: #0075a9;
 }
 
 
@@ -304,23 +416,23 @@ body {
         white-space: nowrap;
     }
 
-    .dialogue {
+    .ask .dialogue {
         background: #48c5d9;
     }
 
-    .therapy {
+    .ask .therapy {
         background: #70c1ff;
     }
 
-    .doctors {
+    .ask .doctors {
         background: #76c87c;
     }
 
-    .money {
+    .ask .money {
         background: #39c773;
     }
 
-    /* �ײ����� */
+    /* footer */
     .footer-nav {
         background: #10a971;
     }
@@ -348,7 +460,7 @@ body {
     }
 
 
-/* ԤԼƽ̨ */
+/* item-section11 挂号平台̨ */
 .item-section11 h6{
     font-size: 1rem;
     display: inline;
