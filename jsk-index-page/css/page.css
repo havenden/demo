@@ -319,7 +319,8 @@ body {
 /* item-section9 学术研究 item-section10 公益活动 */
 .item-section9 .academic-research-txt,
 #charitable-activities p{
-    font-size: 0.75rem;
+    /*font-size: 0.75rem;*/
+    font-size: 0.5625rem;
     text-indent: 2em;
 }
 
