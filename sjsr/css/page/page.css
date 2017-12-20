@@ -175,10 +175,10 @@ body {
 }
 .icon-bg {
   border-radius: 50%;
-  padding: 0.5rem 1rem;
 }
 .ask a {
   color: #fff;
+  display: inline-block;
 }
 .ask .iconfont {
   display: inline-block;
