@@ -1,0 +1,254 @@
+@import "common.css";
+@import "iconfont.css";
+
+body {
+  font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
+  color: #231815;
+  background: #f9f9f9;
+}
+
+/* item-content1 相关概念 */
+.item-content1 .item-content1-pic1 {
+  margin-top: -1rem;
+}
+/* 轮播 */
+/* item-content2 相关症状 */
+.item-content2 .media-heading {
+  font-size: 1.5rem;
+  color: #f96f04;
+  font-weight: bold;
+}
+.item-content2 .desc {
+  font-size: 0.875rem;
+  color: #231815;
+}
+/* item-content3 带来哪些危害 */
+.item-content3 .media-heading {
+  color: #231815;
+}
+.item-content3 h4 {
+  font-size: 1rem;
+}
+.item-content3 .desc {
+  font-size: 0.5833333333333334rem;
+}
+/* 疾病自测 item-content4 */
+.item-content4 .header-title h2 {
+  font-size: 1.6666666666666667rem;
+  color: #3f95a2;
+  font-weight: bold;
+  text-align: center;
+  font-family: HYa4gj;
+}
+.item-content4 .txt-title {
+  color: #3f95a2;
+  font-size: 1rem;
+  font-family: HYa4gj;
+}
+.item-content4 .p-txt {
+  font-size: 0.75rem;
+  font-family: HYa4gj;
+}
+.item-content4 .form-test {
+  font-size: 0.6666666666666666rem;
+}
+.item-content4 .form-test .header {
+  font-size: 1rem;
+  color: #3f95a2;
+}
+.item-content4 .form-test .row {
+  padding: 0.2rem 0;
+}
+.item-content4 .btns a {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 0.15rem;
+}
+.item-content4 #test a {
+  background: #03925c;
+}
+.item-content4 #reset a {
+  background: #cc962c;
+}
+/* item-content5 美国CN脑神经检测仪 */
+.title-h4 {
+  color: #0c6470;
+  font-size: 1.5rem;
+}
+/* 自定义咨询按钮 */
+.customize-btn a {
+  background: #ff9000;
+  color: #fff;
+  border-radius: 0.2rem;
+}
+.customize-btn a .col-4 {
+  height: 3.5rem;
+}
+.customize-btn a .tel-icon {
+  width: 38%;
+}
+.customize-btn .tel-text {
+  font-size: 0.8333333333333334rem;
+}
+.customize-btn .tel-num {
+  font-size: 1.5rem;
+}
+.customize-btn .row {
+  line-height: 1.75rem;
+}
+/* item-content6 */
+.item-content6 .rehabilitation {
+  background: #fff;
+}
+.item-content6 .media-heading {
+  font-size: 1.1666666666666667rem;
+  color: #1f8997;
+}
+.item-content6 .media-heading img {
+  width: 12%;
+}
+.item-content6 .desc {
+  font-size: 0.6666666666666666rem;
+}
+/* item-content7 专家推荐 */
+.item-content7 .title-expert {
+  font-size: 1.5rem;
+  color: #1f8997;
+}
+.item-content7 .icon-arrow-down {
+  color: #1f8997;
+  font-size: 1.1666666666666667rem;
+}
+.business-card {
+  padding: 1.8rem 0 0 1rem;
+  background: url('../../images/introduction-bg.jpg') no-repeat 100% 100%;
+}
+.doctor-name {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+  color: #ff9000;
+  text-shadow: #ffffff 2px 1px 1px, #ffffff 1px 2px 1px, #ffffff -2px 1px 1px, #ffffff 1px -2px 1px;
+  -webkit-text-shadow: #ffffff 2px 1px 1px, #ffffff 1px 2px 1px, #ffffff -2px 1px 1px, #ffffff 1px -2px 1px;
+  -moz-text-shadow: #ffffff 2px 1px 1px, #ffffff 1px 2px 1px, #ffffff -2px 1px 1px, #ffffff 1px -2px 1px;
+}
+.business-card .media-body {
+  color: #020000;
+}
+.doctor-job {
+  font-size: 1rem;
+  font-weight: bold;
+  text-indent: 2em;
+  text-shadow: #ffffff 2px 1px 1px, #ffffff 1px 2px 1px, #ffffff -2px 1px 1px, #ffffff 1px -2px 1px;
+  -webkit-text-shadow: #ffffff 2px 1px 1px, #ffffff 1px 2px 1px, #ffffff -2px 1px 1px, #ffffff 1px -2px 1px;
+  -moz-text-shadow: #ffffff 2px 1px 1px, #ffffff 1px 2px 1px, #ffffff -2px 1px 1px, #ffffff 1px -2px 1px;
+}
+.business-card p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+.business-card p img {
+  margin-right: 1.2rem;
+}
+.business-card .detail {
+  margin-left: 2.2rem;
+  width: auto;
+}
+.business-card .profession {
+  width: 12.5rem;
+  height: 4.083333333333333rem;
+  line-height: 3.65rem;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  background: url('../../images/profession-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+/* 您与健康只差一个电话 */
+#talk-txt {
+  color: #3b9174;
+  font-size: 1rem;
+}
+.ask .icons li {
+  text-align: center;
+  color: #fff;
+}
+.icon-bg {
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+}
+.ask a {
+  color: #fff;
+}
+.ask .iconfont {
+  display: inline-block;
+  font-size: 2rem;
+}
+.ask .txt {
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+.ask h5 {
+  font-size: 0.8333333333333334rem;
+}
+.dialogue {
+  background: #48c5d9;
+}
+.therapy {
+  background: #70c1ff;
+}
+.doctors {
+  background: #76c87c;
+}
+.money {
+  background: #39c773;
+}
+/* 底部导航 */
+.footer-nav {
+  background: #10a971;
+}
+.footer-nav a {
+  color: #fff;
+  font-size: 1rem;
+  display: block;
+  width: 95%;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.footer-nav li:not(:last-child) {
+  border-right: 1px solid #fff;
+}
+.text-content h3 {
+  font-size: 1.1rem;
+  color: #03ac6b;
+  padding-bottom: 0.2rem;
+}
+.text-content li {
+  padding: 0.1rem 0;
+  font-size: 1rem;
+}
+
+
+
+/* 轮播图 */
+#case .carousel-indicators{bottom: -1.5rem;}
+#case .carousel-indicators li{width: 0.2rem;height: 0.2rem;border-radius: 0.1rem;background: #c9c9c9;}
+#case .carousel-indicators .active{background: #ed4814;}
+
+
+/*common*/
+.text-back{color: #d7d7d7;}
+.text-black{color: #000;}
+.text-green{color: #379717;}
+.bg-orange{background: #ffce22;}
+.bg-blue{background: #4cb9ce;}
+.text-orange{color: #e26c0a;}
+.border-dashed{border: dashed 1px #e4c6c7;}
+.btn-green{background: #098762;color: #fff !important;}
+.title-num{display: inline-block;padding:0.5rem;border-top-right-radius: 1rem;border-bottom-right-radius: 1rem; }
+/*header*/
+header ul.nav li{margin-bottom: 0.22rem;padding: 0;}
+header ul.nav li a{display: inline-block;width: 97%;background: #10a971;color: #fff;padding:.2rem 0;font-size: 1.1rem;text-decoration: none;}
+
+
+
