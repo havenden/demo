@@ -1,11 +1,4 @@
-@import "common.css";
-@import "iconfont.css";
 
-body {
-  font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
-  color: #231815;
-  background: #f9f9f9;
-}
 
 /* item-content1 相关概念 */
 .item-content1 .item-content1-pic1 {
