@@ -83,7 +83,7 @@ header .desc-txt {
   margin-bottom: 0.91666667rem;
 }
 .discount-list .media-lt img {
-  padding: 0 1rem 0.41666667rem 0;
+  /*padding: 0 1rem 0.41666667rem 0;*/
 }
 .discount-list li h3 {
   font-size: 2.08333333rem;
