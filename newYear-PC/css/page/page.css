@@ -98,7 +98,7 @@ h6 {
   height: 380px;
 }
 .content-title-bg p {
-  padding: 43px 69px 0;
+  padding: 40px 156px 0;
   color: #fbea00;
   font-size: 18px;
 }
@@ -159,7 +159,10 @@ h6 {
   color: #ffa800;
 }
 .w-1000 {
-  max-width: 1000px;
+  max-width: 1002px;
+}
+.w-1020 {
+  max-width: 1020px;
 }
 .overflow-hidden {
   overflow: hidden;
