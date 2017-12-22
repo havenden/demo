@@ -1,0 +1,269 @@
+@import "common.css";
+@import "iconfont.css";
+@import "style.css";
+
+body {
+  font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
+  color: #231815;
+}
+
+html {
+  overflow-x: hidden;
+}
+p,
+ul,
+ul li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+.top-info {
+  background: #323232;
+}
+.top-info {
+  color: #fff;
+  overflow: hidden;
+  padding: 12px 0 11px;
+}
+.rt-link {
+  margin-left: 67px;
+}
+.rt-link li:not(:last-child) a {
+  border-right: 1px solid #fff;
+}
+.rt-link a {
+  color: #fff;
+  padding: 0 11px 0 6px;
+}
+.navbar {
+  background: #f2f2f2;
+  padding: 0;
+}
+.navbar li {
+  float: left;
+  padding: 20px  16px;
+}
+.navbar li a {
+  color: #313232;
+}
+.navbar li:not(:last-child) {
+  margin-right: 13px;
+}
+.navbar li:last-child {
+  background: #3197cf;
+  padding: 15px 20px;
+}
+.navbar li:last-child a {
+  color: #fff;
+}
+.navbar li:last-child .iconfont {
+  font-size: 24px!important;
+}
+/* banner */
+.banner {
+  position: relative;
+  height: 52.6875rem;
+  width: 100%;
+  background: url('../../images/banner.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.banner .btns {
+  position: absolute;
+  bottom: 68px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.btns a {
+  /* #ffd804  #fff5a0 */
+  color: red;
+  font-size: 34px;
+  padding: 12px 50px;
+  background-image: -webkit-linear-gradient(to top, #ffd804, #fff5a0);
+  background-image: linear-gradient(to top, #ffd804, #fff5a0);
+  border-radius: 10px;
+}
+.btns .iconfont {
+  font-size: 34px;
+  margin-right: 10px;
+}
+/* content-title-bg */
+.content-title-bg {
+  background: url('../../images/bg-pic1.jpg') no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 380px;
+}
+.content-title-bg p {
+  padding: 43px 69px 0;
+  color: #fbea00;
+  font-size: 18px;
+}
+.item-title-img {
+  position: relative;
+}
+.item-title-img img {
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  top: 170px;
+}
+/* 模块1 厚惠有期 */
+.discount-list {
+  margin-top: 1.875rem;
+}
+.discount-list li {
+  box-shadow: 0 0 5px 0 rgba(148, 140, 125, 0.75);
+  border: 1px solid #ccc;
+  border-radius: 0.9375rem;
+  background: #fff;
+  font-size: 1.125rem;
+  color: #5b5b5b;
+  padding: 1.25rem 1.0625rem;
+  margin-bottom: 1.375rem;
+}
+.discount-list .media-lt img {
+  padding: 0 1.5rem 0.625rem 0;
+}
+.discount-list li h3 {
+  font-size: 3.125rem;
+  color: #ffa800;
+}
+.discount-list li .price-btn {
+  display: inline-block;
+  background: #ffa800;
+  color: #fff;
+  width: 14.0625rem;
+  height: 2.5625rem;
+  line-height: 2.5625rem;
+  border-radius: 0.625rem;
+}
+.discount-list li .media-right {
+  border: 1px solid #ccc;
+}
+.discount-list .consult-btn {
+  padding: 11px 34px;
+  color: #fff;
+  background: #eb8e22;
+  border-radius: 10px;
+}
+/* 模块2 */
+.idea-list li {
+  padding: 0 0.2rem;
+}
+.idea-list .box a {
+  padding: 0.4375rem 1.3125rem;
+  border-radius: 1.5rem;
+  color: #fff;
+}
+.idea-list .box .btn {
+  padding: 1.4375rem 0 1.875rem;
+}
+.idea-list .idea-num1 .box {
+  background: url('../../images/num1-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.idea-list .idea-num1 h4 {
+  color: #780202;
+}
+.idea-list .idea-num1 a {
+  background: #ffde00;
+  color: #780202;
+}
+.idea-list .idea-num2 .box {
+  background: url('../../images/num2-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.idea-list .idea-num2 h4 {
+  color: #1b5b89;
+}
+.idea-list .idea-num2 a {
+  background: #004f88;
+}
+.idea-list .idea-num3 .box {
+  background: url('../../images/num3-bg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.idea-list .idea-num3 h4 {
+  color: #4b642d;
+}
+.idea-list .idea-num3 a {
+  background: #448301;
+}
+.idea-list .box h4 {
+  font-size: 1.875rem;
+  padding: 2.5rem 0 0.875rem;
+  font-weight: bold;
+}
+.idea-list .box p {
+  font-size: 0.9375rem;
+  color: #fff;
+  padding: 0 0.3125rem;
+}
+/* 四大优势 */
+.four-advantage {
+  background-size: 100% 100%;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.75rem 0 0.8125rem;
+  margin: 0 2.4375rem 1.75rem 2.25rem;
+}
+.four-advantage .mask {
+  color: #ffef05;
+}
+.media-list li:first-child {
+  margin-top: 1.0625rem;
+}
+.media-list li:not(:first-child) {
+  margin-top: 1.25rem;
+}
+.results-list {
+  margin-top: 1.25rem;
+}
+.results-lis .mt-16 {
+  margin-top: 1rem;
+}
+.results-list .mr-16 {
+  margin-right: 1rem;
+}
+/* 底部门诊信息 */
+.footer .iconfont {
+  font-size: 3.5625rem;
+  color: #fea803;
+}
+.footer .detail {
+  color: #d28d08;
+}
+.outpatient-clinic-btn a {
+  color: #fff;
+  background: #dc0000;
+  font-size: 1.25rem;
+  border-radius: 0.625rem;
+  padding: 0.75rem 0.5625rem;
+}
+/* footer    */
+.contact-info li {
+  line-height: 1.9375rem;
+  color: #333;
+  text-align: center;
+  font-size: 1.375rem;
+}
+/* common */
+.error {
+  color: #ea0000;
+}
+.warning {
+  color: #ffa800;
+}
+.w-1000 {
+  max-width: 1000px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
