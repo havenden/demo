@@ -1,7 +1,5 @@
 @import "common.css";
 @import "iconfont.css";
-@import "style.css";
-
 body {
   font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
   color: #231815;
@@ -152,108 +150,7 @@ h6 {
   background: #eb8e22;
   border-radius: 10px;
 }
-/* 模块2 */
-.idea-list li {
-  padding: 0 0.2rem;
-}
-.idea-list .box a {
-  padding: 0.4375rem 1.3125rem;
-  border-radius: 1.5rem;
-  color: #fff;
-}
-.idea-list .box .btn {
-  padding: 1.4375rem 0 1.875rem;
-}
-.idea-list .idea-num1 .box {
-  background: url('../../images/num1-bg.png') no-repeat;
-  background-size: 100% 100%;
-}
-.idea-list .idea-num1 h4 {
-  color: #780202;
-}
-.idea-list .idea-num1 a {
-  background: #ffde00;
-  color: #780202;
-}
-.idea-list .idea-num2 .box {
-  background: url('../../images/num2-bg.png') no-repeat;
-  background-size: 100% 100%;
-}
-.idea-list .idea-num2 h4 {
-  color: #1b5b89;
-}
-.idea-list .idea-num2 a {
-  background: #004f88;
-}
-.idea-list .idea-num3 .box {
-  background: url('../../images/num3-bg.png') no-repeat;
-  background-size: 100% 100%;
-}
-.idea-list .idea-num3 h4 {
-  color: #4b642d;
-}
-.idea-list .idea-num3 a {
-  background: #448301;
-}
-.idea-list .box h4 {
-  font-size: 1.875rem;
-  padding: 2.5rem 0 0.875rem;
-  font-weight: bold;
-}
-.idea-list .box p {
-  font-size: 0.9375rem;
-  color: #fff;
-  padding: 0 0.3125rem;
-}
-/* 四大优势 */
-.four-advantage {
-  background-size: 100% 100%;
-  font-size: 1.875rem;
-  font-weight: bold;
-  color: #fff;
-  padding: 0.75rem 0 0.8125rem;
-  margin: 0 2.4375rem 1.75rem 2.25rem;
-}
-.four-advantage .mask {
-  color: #ffef05;
-}
-.media-list li:first-child {
-  margin-top: 1.0625rem;
-}
-.media-list li:not(:first-child) {
-  margin-top: 1.25rem;
-}
-.results-list {
-  margin-top: 1.25rem;
-}
-.results-lis .mt-16 {
-  margin-top: 1rem;
-}
-.results-list .mr-16 {
-  margin-right: 1rem;
-}
-/* 底部门诊信息 */
-.footer .iconfont {
-  font-size: 3.5625rem;
-  color: #fea803;
-}
-.footer .detail {
-  color: #d28d08;
-}
-.outpatient-clinic-btn a {
-  color: #fff;
-  background: #dc0000;
-  font-size: 1.25rem;
-  border-radius: 0.625rem;
-  padding: 0.75rem 0.5625rem;
-}
-/* footer    */
-.contact-info li {
-  line-height: 1.9375rem;
-  color: #333;
-  text-align: center;
-  font-size: 1.375rem;
-}
+
 /* common */
 .error {
   color: #ea0000;
@@ -267,3 +164,34 @@ h6 {
 .overflow-hidden {
   overflow: hidden;
 }
+.bg-light-orange{background: #fbedd3;}
+.border-red-rounded{border:1px solid #c61112;border-radius: 1rem;}
+.border-muted{border:1px solid #d2d2d2;}
+.text-grey{color: #5b5b5b;}
+.text-orange{color: #ffa800;}
+.text-golden{color: #ffef05;}
+.btn-orange {color: #fff;background-color: #ffa800;border-color: #ffa800;}
+.btn-orange:hover {color: #fff;background-color: #eb8e22;border-color: #eb8e22;}
+.btn-red{color: #fff;background-color: #b40f0f;border-color: #b40f0f;border-radius: 1rem;}
+.btn-red:hover{opacity: 0.8}
+.btn-blue{color: #fff;background-color: #004f88;border-color: #004f88;border-radius: 1rem;}
+.btn-blue:hover {opacity: 0.8;}
+.btn-green{color: #fff;background-color: #448301;border-color: #448301;border-radius: 1rem;}
+.btn-green:hover {opacity: 0.8;}
+
+/*模块2*/
+.idea-item1{background: url('../../images/num1-bg.png') no-repeat;background-size: 100% 100%;}
+.idea-item2{background: url('../../images/num2-bg.png') no-repeat;background-size: 100% 100%;}
+.idea-item3{background: url('../../images/num3-bg.png') no-repeat;background-size: 100% 100%;}
+
+/*模块4 公益成果*/
+.result-item{position: relative;}
+.result-item-title{position: absolute;bottom: 0;background: rgba(0,0,0,0.6);}
+
+/*模块5*/
+.doctor-item{position: relative;}
+.doctor-item .doctor-btn{position: absolute;bottom: 0;}
+
+/*footer*/
+.footer .wechat{position: relative;}
+.footer .wechat .wechat-txt{position: absolute;width: 2rem;height: 75%;top: 0;margin-top: 12.5%;margin-left: -2rem;background: rgba(59,163,215,0.6);}

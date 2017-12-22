@@ -17,12 +17,14 @@
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- plugs -->
-    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/popper.js/1.11.1/umd/popper.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.min.js"></script>
 
     <title>灰指甲元旦专题</title>
     <meta name="keywords" content="keywords">
@@ -32,23 +34,21 @@
 <body>
 <header class="text-center">
     <div  class="top-info">
-        <ul class="w-1000 mx-auto">
-            <li class="hospital-title float-left">
-                深圳市灰指甲医院——深圳市医保定点单位
-            </li>
-            <li class="header-tips w-1000 mx-auto float-right">
-                <div class="d-inline-block"><span class="iconfont icon-time pr-1"></span>门诊时间（节假日不休）08:30-18:00</div>
-                <ul class="overflow-hidden d-inline-block rt-link">
-                    <li class="d-inline-block"><a href="javascript:void(0)">预约挂号</a></li>
-                    <li class="d-inline-block"><a href="javascript:void(0)">免费预约</a></li>
-                    <li class="d-inline-block"><a href="javascript:void(0)">手机网站</a></li>
-                </ul>
-            </li>
-        </ul>
+        <div class="w-1000 row mx-auto mx-0">
+            <div class="col px-0">深圳市灰指甲医院——深圳市医保定点单位</div>
+            <div class="col px-0 text-right"><span class="fa fa-clock-o pr-1" aria-hidden="true"></span>门诊时间（节假日不休）08:30-18:00</div>
+            <div class="col px-0 text-right">
+                <a class="text-white" href="javascript:void(0)">预约挂号</a>
+                <span class="px-2">|</span>
+                <a class="text-white" href="javascript:void(0)">免费预约</a>
+                <span class="px-2">|</span>
+                <a class="text-white" href="javascript:void(0)">手机网站</a>
+            </div>
+        </div>
     </div>
 
     <div id="logo">
-        <img src="images/logo.jpg">
+        <a href="tel:{dede:global.cfg_tel/}"><img src="images/logo.jpg"></a>
     </div>
 </header>
 <nav class="navbar navbar-default">
@@ -76,230 +76,288 @@
     </div>
 
     <div class="content-title-bg">
-        <p class="w-1000 mx-auto text-indent">
+        <p class="w-1000 mx-auto text-indent wow zoomIn">
             随着跨年脚步的临近，新年的序幕逐渐拉开。全国各地人民的庆祝活动正如火如荼地展开，除了展现新春气氛，各种庆祝方式也带有浓厚的当地传统气息。而年终也正是改变“畏手畏脚”窘境的最好时机，想趁元旦三天假日将自己的“灰指甲”改头换面，以健康的身体迎接新年的到来。
         </p>
         <div class="item-title-img w-1000 mx-auto">
             <img src="images/btn1.gif">
         </div>
     </div>
-    <div class="content w-1000 mx-auto">
+    <div class="content">
 
          <!-- 模块1 -->
-            <div class="item-content1">
-
-                <ul class="discount-list row">
-                    <li class="col-6 mx-0 text-center overflow-hidden">
-                        <div class="col-6 px-0 pr-2 float-left">
-                            <div class="media-lt row mx-0">
-                                <img class="col-3 px-0" src="images/discount-icon.jpg">
-                                <span class="col-9 px-0 pl-2 text-left">灰指甲、甲沟炎、脚气真菌检查费</span>
+        <div class="item-content1 w-1000 mx-auto">
+            <div class="row mx-0">
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="mx-2 p-2 row border-red-rounded bg-light-orange">
+                        <div class="col-6 px-0 pr-2">
+                            <div class="row mx-0">
+                                <img class="col-3 px-0" src="images/discount-icon.png">
+                                <span class="col-9 px-0 pl-2 text-grey">灰指甲、甲沟炎、脚气真菌检查费</span>
                             </div>
-                            <h3>0元</h3>
-                            <s class="price-btn">原价178元</s>
+                            <h3 class="text-center text-orange my-3">0<span class="h6">元</span></h3>
+                            <div class="mx-0 mt-2"><a href="javascript:;" class="btn btn-secondary btn-block"><del class="h5">原价178元</del></a></div>
                         </div>
-                        <div class="col-6 px-0 media-right float-left">
+                        <div class="col-6 px-0 border-muted rounded p-1 bg-white">
                             <img class="w-100" src="images/discount-pic1.jpg">
-                            <a class="consult-btn" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a>
-                        </div>
-                    </li>
-
-                    <li class="col-6 mx-0 text-center overflow-hidden">
-                        <div class="col-6 px-0 pr-2 float-left">
-                            <div class="media-lt row mx-0">
-                                <img class="col-3 px-0" src="images/discount-icon.jpg">
-                                <span class="col-9 px-0 pl-2 text-left">灰指甲、甲沟炎、脚气真菌检查费</span>
+                            <div class="my-2 text-center">
+                                <a class="btn btn-orange px-3" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a>
                             </div>
-                            <h3>50%</h3>
-                            <div class="price-btn">脚气治疗费可援助20%</div>
                         </div>
-                        <div class="col-6 px-0 media-right float-left">
+                    </div>
+                </div>
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="mx-2 p-2 row border-red-rounded bg-light-orange">
+                        <div class="col-6 px-0 pr-2">
+                            <div class="row mx-0">
+                                <img class="col-3 px-0" src="images/discount-icon.png">
+                                <span class="col-9 px-0 pl-2 text-grey">灰指甲、甲沟炎 治疗费可援助</span>
+                            </div>
+                            <h3 class="text-center text-orange my-3">50<span class="h6">%</span></h3>
+                            <div class="mx-0 mt-2"><a href="javascript:;" class="btn btn-secondary btn-block"><del class="h5">脚气治疗费可援助20%</del></a></div>
+                        </div>
+                        <div class="col-6 px-0 border-muted rounded p-1 bg-white">
                             <img class="w-100" src="images/discount-pic2.jpg">
-                            <a class="consult-btn" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a>
-                        </div>
-                    </li>
-
-                    <li class="col-6 mx-0 text-center overflow-hidden">
-                        <div class="col-6 px-0 pr-2 float-left">
-                            <div class="media-lt row mx-0">
-                                <img class="col-3 px-0" src="images/discount-icon.jpg">
-                                <span class="col-9 px-2 text-left">(退)现役军人、60岁以上老人、</span>
+                            <div class="my-2 text-center">
+                                <a class="btn btn-orange px-3" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a>
                             </div>
-                            <p class="text-left">教师、在校学生可凭有关证件就诊减免</p>
-                            <h3>200元</h3>
                         </div>
-                        <div class="col-6 px-0 media-right float-left">
+                    </div>
+                </div>
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="mx-2 p-2 row border-red-rounded bg-light-orange">
+                        <div class="col-6 px-0 pr-2">
+                            <div class="row mx-0">
+                                <img class="col-3 px-0" src="images/discount-icon.png">
+                                <span class="col-9 px-0 pl-2 text-grey">(退)现役军人、<br> 60岁以上老人、</span>
+                            </div>
+                            <span class="text-grey">教师、在校学生可凭有关证件就诊减免</span>
+                            <h3 class="text-center text-orange my-3">200<span class="h6">元</span></h3>
+                        </div>
+                        <div class="col-6 px-0 border-muted rounded p-1 bg-white">
                             <img class="w-100" src="images/discount-pic3.jpg">
-                            <a class="consult-btn" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a>
-                        </div>
-                    </li>
-
-                    <li class="col-6 mx-0 text-center overflow-hidden">
-                        <div class="col-6 px-0 float-left">
-                            <div class="media-lt row mx-0">
-                                <img class="col-3 px-0" src="images/discount-icon.jpg">
-                                <span class="col-9 px-2 text-left">微信朋友圈进行活动信息的关注</span>
+                            <div class="my-2 text-center">
+                                <a class="btn btn-orange px-3" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a>
                             </div>
-                            <p class="text-left">和点赞，满<span class="error">38个赞</span>送<span class="warning">美甲
-                               套装一套</span>，满<span class="error">68个赞</span>送
-                                <span class="warning">中药杀菌一次</span>，满<span class="error">88个
-                               赞</span>送<span class="warning">免费治疗一套</span></p>
                         </div>
-                        <div class="col-6 px-0 media-right float-left">
+                    </div>
+                </div>
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="mx-2 p-2 row border-red-rounded bg-light-orange">
+                        <div class="col-6 px-0 pr-2">
+                            <div class="row mx-0">
+                                <img class="col-3 px-0" src="images/discount-icon.png">
+                                <span class="col-9 px-0 pl-2 text-grey">微信朋友圈进行<br>活动信息的关注</span>
+                            </div>
+                            <p class="text-grey">和点赞，满<span class="text-danger">38个赞</span>送<span class="text-orange font-weight-bold">美甲套装一套</span>，满<span class="text-danger">68个赞</span>送<span class="text-orange font-weight-bold">中药杀菌一次</span>，满<span class="text-danger">88个赞</span>送<span class="text-orange font-weight-bold">免费治疗一套</span></p>
+                        </div>
+                        <div class="col-6 px-0 border-muted rounded p-1 bg-white">
                             <img class="w-100" src="images/discount-pic4.jpg">
-                            <div><a class="consult-btn" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a></div>
+                            <div class="my-2 text-center">
+                                <a class="btn btn-orange px-3" href="javascript:;" onclick="openZoosUrl()">立即咨询&nbsp;&gt;&gt;</a>
+                            </div>
                         </div>
-                    </li>
-                </ul>
-
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <!-- 模块2 -->
-            <div class="item-content2 mt-4">
+        <!-- 模块2 -->
+        <div class="item-content2 mt-4 w-1000 mx-auto">
 
-            <div class="item-title-img">
-                <img class="w-100" src="images/title2.jpg">
+            <div class="row mx-0">
+                <div class="title-img col-8"><img class="w-100" src="images/title2.jpg"></div>
+                <div class="title-btn col-4 text-right pt-2">
+                    <a href="javascript:;" onclick="openZoosUrl()"><img src="images/btn1.gif" class="pt-5"></a>
+                </div>
             </div>
-
-            <ul class="idea-list row mx-0 text-center mt-3">
-
-                <li class="col-4 idea-num1">
-                    <div class="box h-100">
-                        <h4>春节传染</h4>
-                        <p class="text-justify">灰指甲传染性极强交流感情之余可别把灰指甲传染给亲友</p>
-                        <div class="btn"><a href="#">点击咨询</a></div>
+            
+            <div class="ideas row mx-0">
+                <div class="idea-item col-4 px-0 wow zoomIn">
+                    <div class="mx-2 py-3 idea-item1">
+                        <h3 class="py-3 text-center font-weight-bold" style="color: #780202;">春节传染</h3>
+                        <p class="px-5 text-center text-white py-3">灰指甲传染性极强，交流感情之余，可别把灰指甲传染给亲友了</p>
+                        <div class="text-center mb-3">
+                            <a href="javascript:;" onclick="openZoosUrl()" class="btn btn-red font-weight-bold px-5">点击咨询</a>
+                        </div>
                     </div>
-                </li>
-
-                <li class="col-4 idea-num2">
-                    <div class="box h-100">
-                        <h4>拖拖忍忍</h4>
-                        <p class="text-justify">我这病也不是什么大病，就是平常指甲不好看，拖拖、忍忍就好了</p>
-                        <div class="btn"><a href="#">点击咨询</a></div>
+                </div>
+                <div class="idea-item col-4 px-0 wow zoomIn">
+                    <div class="mx-2 py-3 idea-item2">
+                        <h3 class="py-3 text-center font-weight-bold" style="color: #1b5b89;">拖拖忍忍</h3>
+                        <p class="px-5 text-center text-white py-3">我这病也不是什么大病，就是平常指甲不好看，拖拖忍忍就好了</p>
+                        <div class="text-center mb-3">
+                            <a href="javascript:;" onclick="openZoosUrl()" class="btn btn-blue font-weight-bold px-5">点击咨询</a>
+                        </div>
                     </div>
-                </li>
-
-                <li class="col-4 idea-num3">
-                    <div class="box h-100">
-                        <h4>年底很忙</h4>
-                        <p class="text-justify">就是过年的时候忙，别说看病，就连周末也要加班，哪有时间看病</p>
-                        <div class="btn"><a href="#">点击咨询</a></div>
+                </div>
+                <div class="idea-item col-4 px-0 wow zoomIn">
+                    <div class="mx-2 py-3 idea-item3">
+                        <h3 class="py-3 text-center font-weight-bold" style="color: #4b642d;">年底很忙</h3>
+                        <p class="px-5 text-center text-white py-3">就是过年的时候忙，别说看病就连周末也要加班，哪有时间看病</p>
+                        <div class="text-center mb-3">
+                            <a href="javascript:;" onclick="openZoosUrl()" class="btn btn-green font-weight-bold px-5">点击咨询</a>
+                        </div>
                     </div>
-                </li>
-            </ul>
-
+                </div>
+            </div>
             <!-- 四大优势成就年底治疗 -->
             <div class="tc mt-4">
-                <div class="four-advantage"><span class="mask">四大优势</span>成就年底治疗</div>
-                <img class="w-100" src="images/four-advantage.jpg">
-                <a href="javascript:;" onclick="openZoosUrl()"><img src="images/btn1.gif"></a>
+                <div class="advantage-title" style="background: url(images/bg-pic2.jpg);background-size: 100% 100%;">
+                    <h3 class="py-3 text-white"><span class="text-golden">四大优势</span>成就年底治疗</h3>
+                </div>
+                <div class="m-3 wow zoomIn"><img src="images/advantage-pic.jpg" class="w-100"></div>
             </div>
         </div>
 
         <!-- 模块3  -->
-        <div class="item-content3 mt-4">
+        <div class="item-content3 mt-4 pb-5" style="background: #c82d2d;">
+            <div class="w-1000 mx-auto">
+                <div class="row mx-0">
+                    <div class="title-img col-8"><img class="w-100" src="images/title3.jpg"></div>
+                    <div class="title-btn col-4 text-right pt-2">
+                        <a href="javascript:;" onclick="openZoosUrl()"><img src="images/btn1-2.gif" class="pt-5"></a>
+                    </div>
+                </div>
 
-            <div class="item-title-img">
-                <img class="w-100" src="images/title3.jpg">
+                <div class="row mt-3 mx-0">
+                    <div class="col px-0 wow zoomIn">
+                        <div class="mx-2 bg-white">
+                            <div class="p-2">
+                                <img src="images/effect-pic1.jpg" class="w-100">
+                                <p class="text-center mt-2 h5">灰指甲治疗效果</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col px-0 wow zoomIn">
+                        <div class="mx-2 bg-white">
+                            <div class="p-2">
+                                <img src="images/effect-pic2.jpg" class="w-100">
+                                <p class="text-center mt-2 h5">甲沟炎治疗效果</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col px-0 wow zoomIn">
+                        <div class="mx-2 bg-white">
+                            <div class="p-2">
+                                <img src="images/effect-pic3.jpg" class="w-100">
+                                <p class="text-center mt-2 h5">脚气治疗效果</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <ul class="media-list row mx-0">
-                <li class="px0"><img class="w-100" src="images/effect-pic1.jpg"></li>
-                <li class="px0"><img class="w-100" src="images/effect-pic2.jpg"></li>
-                <li class="px0"><img class="w-100" src="images/effect-pic3.jpg"></li>
-            </ul>
-            <!-- 点击在线咨询 -->
-            <div class="tc mt-3">
-                <a href="javascript:;" onclick="openZoosUrl()">
-                    <a href="javascript:;"><img src="images/btn1.gif"></a>
-                </a>
-            </div>
-
         </div>
 
         <!-- 公益成果 -->
-        <div class="item-content4 mt-4">
+        <div class="item-content4 mt-4 w-1000 mx-auto">
 
-            <div class="item-title-img">
-                <img class="w-100" src="images/title4.jpg">
+            <div class="row mx-0">
+                    <div class="title-img col-8"><img class="w-100" src="images/title4.jpg"></div>
+                    <div class="title-btn col-4 text-right pt-2">
+                        <a href="javascript:;" onclick="openZoosUrl()"><img src="images/btn1.gif" class="pt-5"></a>
+                    </div>
             </div>
-
-            <ul class="results-list row mx-0">
-                <li class="col-6 pl-0 pr-1"><img class="w-100" src="images/results-pic1.jpg"></li>
-                <li class="col-6 pl-1 pr-0"><img class="w-100" src="images/results-pic2.jpg"></li>
-                <li class="col-6 pr-1 pl-0 mt-2"><img class="w-100" src="images/results-pic3.jpg"></li>
-                <li class="col-6 pl-1 pr-0 mt-2"><img class="w-100" src="images/results-pic4.jpg"></li>
-            </ul>
-
-
-            <!-- 点击在线咨询 -->
-            <div class="tc mt-3">
-                <a href="javascript:;" onclick="openZoosUrl()">
-                    <a href="javascript:;"><img src="images/btn1.gif"></a>
-                </a>
+            
+            <div class="row mx-0">
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="result-item mx-2">
+                        <img src="images/result-pic1.jpg" class="w-100">
+                        <p class="text-white result-item-title w-100 text-center py-3 h5 mb-0">第三届“夏病冬治”<br>惠民活动</p>
+                    </div>
+                </div>
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="result-item mx-2">
+                        <img src="images/result-pic1.jpg" class="w-100">
+                        <p class="text-white result-item-title w-100 text-center py-3 h5 mb-0">空军总院专家尹主任<br>到我院开诊暖冬义诊</p>
+                    </div>
+                </div>
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="result-item mx-2">
+                        <img src="images/result-pic1.jpg" class="w-100">
+                        <p class="text-white result-item-title w-100 text-center py-3 h5 mb-0">大型皮肤病公益活动<br>在我院启动</p>
+                    </div>
+                </div>
+                <div class="col-6 px-0 mt-3 wow zoomIn">
+                    <div class="result-item mx-2">
+                        <img src="images/result-pic1.jpg" class="w-100">
+                        <p class="text-white result-item-title w-100 text-center py-3 h5 mb-0">第三届全国皮肤病诊<br>疗技术推广大会启动</p>
+                    </div>
+                </div>
             </div>
-
         </div>
 
         <!-- 模块5  -->
-        <div class="item-content5 mt-4">
-            <div class="item-title-img">
-                <img class="w-100" src="images/title5.jpg">
-            </div>
-            <div class="mt-3">
-                <img class="w-100" src="images/doctors.jpg">
+        <div class="item-content5 mt-4 w-1000 mx-auto">
+            <div class="row mx-0">
+                <div class="title-img col-8"><img class="w-100" src="images/title5.jpg"></div>
+                <div class="title-btn col-4 text-right pt-2">
+                    <a href="javascript:;" onclick="openZoosUrl()"><img src="images/btn1.gif" class="pt-5"></a>
+                </div>
             </div>
 
-            <!-- 点击在线咨询 -->
-            <div class="tc mt-3 pb-4">
-                <a href="javascript:;" onclick="openZoosUrl()">
-                    <a href="javascript:;"><img src="images/btn1.gif"></a>
-                </a>
+            <div class="mt-3 row mx-0">
+                <div class="col px-0 wow zoomIn">
+                    <div class="mx-3 doctor-item">
+                        <img src="images/doctor-lxy.png" class="w-100">
+                        <a href="javascript:;" class="d-block text-center pb-4 doctor-btn w-100" onclick="openZoosUrl()"><img src="images/btn3.gif" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col px-0 wow zoomIn">
+                    <div class="mx-3 doctor-item">
+                        <img src="images/doctor-ysj.png" class="w-100">
+                        <a href="javascript:;" class="d-block text-center pb-4 doctor-btn w-100" onclick="openZoosUrl()"><img src="images/btn3.gif" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col px-0 wow zoomIn">
+                    <div class="mx-3 doctor-item">
+                        <img src="images/doctor-jgm.png" class="w-100">
+                        <a href="javascript:;" class="d-block text-center pb-4 doctor-btn w-100" onclick="openZoosUrl()"><img src="images/btn3.gif" class="img-fluid"></a>
+                    </div>
+                </div>
             </div>
+
+            
         </div>
 
     </div>
 </div>
 
-<div class="footer mx-auto">
-    <!-- 门诊信息 -->
-    <div class="item-content7 mt-3">
-        <ul class="row outpatient-clinic-info">
-            <li class="col-5"><img class="w-100" src="images/position-map.jpg"></li>
-            <li class="col-7">
-                <ul class="row">
-                    <li class="col-2">
-                        <span class="iconfont icon-time"></span>
-                    </li>
-                    <li class="col-10 detail-box">
-                        <div class="txt title">门诊时间（节假日无休）</div>
-                        <div class="txt detail">08:00—18:00</div>
-                    </li>
-                </ul>
-                <ul class="row">
-                    <li class="col-2">
-                        <span class="iconfont icon-map"></span>
-                    </li>
-                    <li class="col-10 detail-box">
-                        <div class="txt title">医院地址：</div>
-                        <div class="txt detail">深圳市罗湖区笋岗东路3013号长虹大厦</div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-        <ul class="outpatient-clinic-btn text-center mt-2">
-            <li class="d-inline-block mr-2"><a href="#">查看地图&nbsp;&gt;</a></li>
-            <li class="d-inline-block"><a href="#">返回顶部&nbsp;&gt;</a></li>
-        </ul>
+<div class="footer mx-auto mt-5" style="background: url(images/footer-bg.jpg);background-repeat: repeat;">
+    <div class="w-1000 row mx-0 mx-auto">
+        <div class="col-4 px-0">
+            <img src="images/footer-logo.jpg" class="img-fluid">
+        </div>
+        
+        <div class="col px-0">
+            <div class="ml-3">
+                <div class="nav mt-2">
+                    <a class="text-white pr-3 border border-top-0 border-left-0 border-bottom-0" href="/">网站首页</a>
+                    <a class="text-white px-3 border border-top-0 border-left-0 border-bottom-0" href="/">鹏程品牌</a>
+                    <a class="text-white px-3 border border-top-0 border-left-0 border-bottom-0" href="/">医生团队</a>
+                    <a class="text-white px-3 border border-top-0 border-left-0 border-bottom-0" href="/">治疗方法</a>
+                    <a class="text-white px-3 border border-top-0 border-left-0 border-bottom-0" href="/">百姓口碑</a>
+                    <a class="text-white px-3 border border-top-0 border-left-0 border-bottom-0" href="/">真人案例</a>
+                    <a class="text-white pl-3" href="/">来院路线</a>
+                </div>
+                <div class="row mx-0 mt-3">
+                    <div class="col-7 px-0 mt-4 text-white">
+                        <p>
+                            <span>咨询热线：0755-85212177</span>
+                            <span>咨询QQ：1173259284</span>
+                        </p>
+                        <p class="mt-2">医院地址：深圳市罗湖区笋岗东路3013号长虹大厦</p>
+                    </div>
+                    <div class="col-5 px-0 text-right">
+                        <div class="d-inline-block wechat">
+                            <img src="images/wechat-pic.jpg" class="img-fluid">
+                            <p class="wechat-txt text-white px-2">官方微信</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-    <!--footer-->
-    <ul class="contact-info text-center mt-4">
-        <li>QQ：1173259284 官方微信：szhzjyy</li>
-        <li>电话：0755-85212177</li>
-        <li>电脑版 | 手机版</li>
-    </ul>
 </div>
 
 <script>
@@ -316,7 +374,7 @@
             'height': w
         })
     }
-
+    new WOW().init();
 </script>
 
 </body>
