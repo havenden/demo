@@ -9,12 +9,13 @@
   margin: 0 auto ;
 }
 .title-box {
-  height: 1.6666666666666667rem;
+  height: 2rem;
+  line-height: 1.6666666666666667rem;
   background: url('../../images/title-top-bg.png') no-repeat;
   background-size: 100% 100%;
 }
 .title-box .title {
-  font-size: 0.9166666666666666rem;
+  font-size: 1.1666666666666667rem;
   line-height: 1.6666666666666667rem;
   color: #276476;
   text-shadow: #ffffff 2px 1px 1px, #ffffff 1px 2px 1px, #ffffff -2px 1px 1px, #ffffff 1px -2px 1px;
