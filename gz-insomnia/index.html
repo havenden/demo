@@ -36,19 +36,19 @@
     <header>
       <!-- logo -->
       <div>
-        <a href=""><img width="80%" src="images/logo.png"></a><a href=""><img width="20%" src="images/tel.gif"></a>
+        <a href="/"><img width="80%" src="images/logo.png"></a><a href="tel:{dede:global.cfg_tel/}"><img width="20%" src="images/tel.gif"></a>
       </div>
       
       <!-- nav导航 -->
       <ul class="list-unstyled row text-center nav mx-0">
         <li class="col-3"><a href="/">网站首页</a></li>
-        <li class="col-3"><a href="/page/yyjs/">益寿简介</a></li>
-        <li class="col-3"><a href="/page/zj/">特色诊疗</a></li>
-        <li class="col-3"><a href="javascript:;">专家团队</a></li>
-        <li class="col-3"><a href="/page/kfal/">援助申请</a></li>
-        <li class="col-3"><a href="/page/tslf/">疾病自测</a></li>
-        <li class="col-3"><a href="/page/lylx/">自助挂号</a></li>
-        <li class="col-3"><a href="javascript:;">来院路线</a></li>
+        <li class="col-3"><a href="/special/profile/">益寿简介</a></li>
+        <li class="col-3"><a href="/special/liaofa/">特色诊疗</a></li>
+        <li class="col-3"><a href="/special/zjtd/">专家团队</a></li>
+        <li class="col-3"><a href="/special/activity/">援助申请</a></li>
+        <li class="col-3"><a href="/jbzc/">疾病自测</a></li>
+        <li class="col-3"><a href="javascript:openZoosUrl();">自助挂号</a></li>
+        <li class="col-3"><a href="/lylx/">来院路线</a></li>
       </ul>
     </header>
     
@@ -70,8 +70,8 @@
 
         <!-- 咨询按钮 -->
         <ul class="row mx-0 btns mt-3">
-          <li class="col-6"><img class="img-fluid" src="images/info-btn.gif"></li>
-          <li class="col-6"><img class="img-fluid" src="images/tel-btn.gif"></li>
+          <li class="col-6"><a href="javascript:openZoosUrl();"><img class="img-fluid" src="images/info-btn.gif"></a></li>
+          <li class="col-6"><a href="tel:{dede:global.cfg_tel/}"><img class="img-fluid" src="images/tel-btn.gif"></a></li>
         </ul>
       </div>
 
@@ -170,8 +170,8 @@
 
         <!-- 咨询按钮 -->
         <ul class="row mx-0 btns mt-3">
-          <li class="col-6"><img class="img-fluid" src="images/info-btn.gif"></li>
-          <li class="col-6"><img class="img-fluid" src="images/tel-btn.gif"></li>
+          <li class="col-6"><a href="javascript:openZoosUrl();"><img class="img-fluid" src="images/info-btn.gif"></a></li>
+          <li class="col-6"><a href="tel:{dede:global.cfg_tel/}"><img class="img-fluid" src="images/tel-btn.gif"></a></li>
         </ul>
       </div>
 
@@ -195,77 +195,77 @@
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">1</div>
                 <div class="col-8 tit">感觉兴趣丧失，无愉快感</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option1" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option1" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option1" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">2</div>
                 <div class="col-8 tit"> 感觉精力减退或疲乏感	</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option2" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option2" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option2" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">3</div>
                 <div class="col-8 tit">对未来的事总感觉不满意</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option3" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option3" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option3" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">4</div>
                 <div class="col-8 tit">感觉自己有社会罪恶感</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option4" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option4" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option4" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">5</div>
                 <div class="col-8 tit">自我评价过低或自责</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option5" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option5" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option5" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">6</div>
                 <div class="col-8 tit">联想困难或自我感觉思考能力下降</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option6" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option6" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option6" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">7</div>
                 <div class="col-8 tit">反复出现想死的念头或有自杀、自伤行为</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option7" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option7" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option7" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">8</div>
                 <div class="col-8 tit">睡眠障碍，如失眠、早醒或睡眠过多</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option8" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option8" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option8" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">9</div>
                 <div class="col-8 tit">食欲减低或体重明显降低</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option9" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option9" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option9" type="radio" ></div>
               </li>
               <li class="row mx-0 px-1">
                 <div class="col-1 px-0">10</div>
                 <div class="col-8 tit">性欲减退</div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
-                <div class="col-1 px-0"><input class="" name="" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option10" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option10" type="radio" ></div>
+                <div class="col-1 px-0"><input class="" name="option10" type="radio" ></div>
               </li>
             </ul>
 
             <ul class="row mx-0 btns mt-3 pb-3">
-              <li id="test" class="col-6 text-right"><a href="#">提交自测</a></li>
+              <li id="test" class="col-6 text-right"><a href="javascript:openZoosUrl();">提交自测</a></li>
               <li id="reset" class="col-6"><a href="#">重新填写</a></li>
             </ul>
 
@@ -280,8 +280,8 @@
 
         <!-- 咨询按钮 -->
         <ul class="row mx-0 btns mt-3">
-          <li class="col-6"><img class="img-fluid" src="images/info-btn.gif"></li>
-          <li class="col-6"><img class="img-fluid" src="images/tel-btn.gif"></li>
+          <li class="col-6"><a href="javascript:openZoosUrl();"><img class="img-fluid" src="images/info-btn.gif"></a></li>
+          <li class="col-6"><a href="tel:{dede:global.cfg_tel/}"><img class="img-fluid" src="images/tel-btn.gif"></a></li>
         </ul>
       </div>
 
@@ -332,9 +332,9 @@
         </ul>
 
         <!-- 咨询按钮 -->
-        <ul class="row mx-0 btns mt-3 text-center px-2">
-          <li class="col-6"><img class="img-fluid" src="images/info-btn.gif"></li>
-          <li class="col-6"><img class="img-fluid" src="images/tel-btn.gif"></li>
+        <ul class="row mx-0 btns mt-3">
+          <li class="col-6"><a href="javascript:openZoosUrl();"><img class="img-fluid" src="images/info-btn.gif"></a></li>
+          <li class="col-6"><a href="tel:{dede:global.cfg_tel/}"><img class="img-fluid" src="images/tel-btn.gif"></a></li>
         </ul>
       </div>
 
@@ -479,9 +479,9 @@
                 </div>
 
                 <!-- 咨询按钮 -->
-                <ul class="row mx-0 btns mt-4 mb-2">
-                  <li class="col-6"><img class="img-fluid" src="images/info-btn.gif"></li>
-                  <li class="col-6"><img class="img-fluid" src="images/tel-btn.gif"></li>
+                <ul class="row mx-0 btns mt-3">
+                  <li class="col-6"><a href="javascript:openZoosUrl();"><img class="img-fluid" src="images/info-btn.gif"></a></li>
+                  <li class="col-6"><a href="tel:{dede:global.cfg_tel/}"><img class="img-fluid" src="images/tel-btn.gif"></a></li>
                 </ul>
 
               </div>
@@ -500,28 +500,28 @@
     <h5 class="tc">点击即可免费通话</h5>
     <ul class="row icons mx-0 px-1 mt-2">
       <li class="col-3">
-        <a class="db" href="#">
+        <a class="db" href="javascript:openZoosUrl();">
           <div class="icon-bg dialogue">
             <span class="iconfont icon-dialogue"></span><div class="txt">问病情</div>
           </div>
         </a>
       </li>
       <li class="col-3">
-        <a class="db" href="#">
+        <a class="db" href="javascript:openZoosUrl();">
           <div class="icon-bg therapy">
             <span class="iconfont icon-therapy"></span><div class="txt">问病情</div>
           </div>
         </a>
       </li>
       <li class="col-3">
-        <a class="db" href="#">
+        <a class="db" href="javascript:openZoosUrl();">
           <div class="icon-bg doctors">
             <span class="iconfont icon-doctors"></span><div class="txt">问病情</div>
           </div>
         </a>
       </li>
       <li class="col-3">
-        <a class="db" href="#">
+        <a class="db" href="javascript:openZoosUrl();">
           <div class="icon-bg money">
             <span class="iconfont icon-money"></span><div class="txt">问病情</div>
           </div>
@@ -532,9 +532,9 @@
 
     <!-- 底部 nav导航 -->
     <ul class="row footer-nav mt-3 mx-0">
-      <li class="col-3" role="presentation"><a href="#">网站首页</a></li>
-      <li class="col-3" role="presentation"><a href="#">权威技术</a></li>
-      <li class="col-3" role="presentation"><a href="#">音乐治疗</a></li>
+      <li class="col-3" role="presentation"><a href="/">网站首页</a></li>
+      <li class="col-3" role="presentation"><a href="/page/qwjs/">权威技术</a></li>
+      <li class="col-3" role="presentation"><a href="javascript:openZoosUrl();">音乐治疗</a></li>
       <li class="col-3" role="presentation"><a href="#">返回顶部</a></li>
     </ul>
 
