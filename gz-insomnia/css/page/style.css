@@ -4,8 +4,8 @@
 }
 /* item-content1 中国抑郁症患者数量庞大 */
 .item {
-  padding-top: 0.83333333rem;
-  width: 24.04166667rem;
+  padding-top: 0.8333333333333334rem;
+  width: 24.041666666666668rem;
   margin: 0 auto ;
 }
 .title-box {
@@ -25,7 +25,7 @@
   background: #fdf4ed;
 }
 .item-content1 .box {
-  padding: 1.25rem 1.20833333rem 1.625rem;
+  padding: 1.25rem 1.2083333333333333rem 1.625rem;
 }
 /* item-content2 抑郁症的高发人群 */
 .item-content2 ul .content {
@@ -33,20 +33,20 @@
   height: 100%;
 }
 .item-content2 .cn-txt {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 .item-content2 .en-txt {
-  font-size: 0.33333333rem;
+  font-size: 0.5rem;
   -webkit-text-size-adjust: none;
 }
 .item-content2 .content p {
-  font-size: 0.5rem;
+  font-size: 0.6666666666666666rem;
   text-indent: 2em;
-  padding: 0.5rem 0 0.58333333rem;
+  padding: 0.5rem 0 0.5833333333333334rem;
   text-align: justify;
 }
 .item-content2 .box {
-  padding: 0.33333333rem 0.41666667rem 0.54166667rem;
+  padding: 0.3333333333333333rem 0.4166666666666667rem 0.5416666666666666rem;
 }
 /*.item-content2 .list{
   display: -webkit-flex; /!* Safari *!/
@@ -57,29 +57,29 @@
 }*/
 /* item-content3 抑郁症自测—将疾病消灭在萌芽当中 */
 .item-content3 .form-title {
-  font-size: 1.04166667rem;
+  font-size: 1.3333333333333333rem;
   color: #276476;
 }
 .item-content3 .form-test .tit {
   text-align: justify;
 }
 .item-content3 .form-test .row {
-  padding-bottom: 0.16666667rem;
+  padding-bottom: 0.16666666666666666rem;
 }
 .item-content3 .form-test {
-  font-size: 0.58333333rem;
+  font-size: 0.75rem;
 }
 .item-content3 .box {
-  padding: 0.875rem 0.41666667rem 0.75rem;
+  padding: 0.875rem 0.4166666666666667rem 0.75rem;
 }
 .item-content3 .btns a {
   width: 4.5rem;
-  height: 1.04166667rem;
-  line-height: 1.04166667rem;
+  height: 1.5833333333333333rem;
+  line-height: 1.5833333333333333rem;
   color: #fff;
   display: inline-block;
   text-align: center;
-  border-radius: 0.08333333rem;
+  border-radius: 0.08333333333333333rem;
 }
 .item-content3 .btns #test a {
   background: #276476;
@@ -87,30 +87,34 @@
 .item-content3 .btns #reset a {
   background: #eb6100;
 }
+.item-content3 .text-content1 {
+  font-size: 0.9166666666666666rem;
+  text-align: justify;
+}
 .item-content3 .text-content1 .txt-title {
   color: #276476;
-  font-size: 0.75rem;
+  font-size: 1.0833333333333333rem;
 }
 .item-content3 .header div {
   color: #276476;
 }
 /* item-content4 专家推荐 */
 .item-content4 .title-expert {
-  font-size: 1.79166667rem;
+  font-size: 2.3333333333333335rem;
   color: #eb6100;
   font-weight: bold;
 }
 .item-content4 h6 {
   color: #2a2929;
-  font-size: 1.16666667rem;
+  font-size: 1.3333333333333333rem;
 }
 .item-content4 .doctors-content {
-  width: 23.45833333rem;
-  height: 1.70833333rem;
+  width: 23.458333333333332rem;
+  height: 1.7083333333333333rem;
 }
 .item-content4 .card-bg {
-  width: 23.45833333rem;
-  height: 1.70833333rem;
+  width: 23.458333333333332rem;
+  height: 1.7083333333333333rem;
   margin: auto;
 }
 .item-content4 .card-top {
@@ -122,31 +126,31 @@
   background-size: 100% 100%;
 }
 .business-card {
-  width: 20.20833333rem;
+  width: 20.208333333333332rem;
   margin: auto;
   background-color: #dcdddd;
-  box-shadow: 0.20833333rem 0.04166667rem 0.125rem 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 0.20833333333333334rem 0.041666666666666664rem 0.125rem 0 rgba(0, 0, 0, 0.75);
   border-radius: 0.5rem;
 }
 .business-card .media-object {
   margin-top: 1.5rem;
-  padding-bottom: 0.41666667rem;
+  padding-bottom: 0.4166666666666667rem;
 }
 .doctor-name {
   font-family: MicrosoftYaHei;
-  font-size: 1.41666667rem;
+  font-size: 1.6666666666666667rem;
   color: #2a2929;
 }
 .business-card .media-body {
   color: #020000;
 }
 .doctor-job {
-  font-size: 0.70833333rem;
+  font-size: 0.9166666666666666rem;
   color: #2a2929;
   text-indent: 4em;
 }
 .business-card p {
-  font-size: 0.625rem;
+  font-size: 0.75rem;
   margin-bottom: 0;
 }
 .business-card p img {
@@ -163,34 +167,34 @@
 .contact .box {
   background: url('../../images/block.jpg') repeat-y;
   background-size: 100% ;
-  padding: 0.41666667rem 0;
+  padding: 0.4166666666666667rem 0;
 }
 .item-content6 .content {
   background: #fff;
-  margin: 0 0.41666667rem;
-  padding: 0.91666667rem 1.91666667rem;
+  margin: 0 0.4166666666666667rem;
+  padding: 0.9166666666666666rem 1.9166666666666667rem;
 }
 .item-content6 .content-list {
   padding-bottom: 6rem;
 }
 .item-content6 .box .desc {
-  padding: 0.41666667rem 1.66666667rem;
+  padding: 0.4166666666666667rem 1.6666666666666667rem;
 }
 .item-content6 .box h3 {
-  font-size: 1.04166667rem;
+  font-size: 1.3333333333333333rem;
   color: #eb6100;
 }
 .item-content6 .box .txt {
-  font-size: 0.625rem;
+  font-size: 0.9166666666666666rem;
   text-align: justify;
 }
 .item-content6 .contact {
-  padding: 0 0.41666667rem;
+  padding: 0 0.4166666666666667rem;
 }
 .item-content6 .title-content .one {
   font-size: 1.125rem;
   color: #562b0d;
-  padding-top: 0.41666667rem;
+  padding-top: 0.4166666666666667rem;
 }
 .item-content6 .title-content .two {
   font-size: 1.125rem;
@@ -203,10 +207,10 @@
 .item-content6 .title-content .four {
   font-size: 1.375rem;
   color: #fff;
-  padding-bottom: 4.16666667rem;
+  padding-bottom: 4.166666666666667rem;
 }
 .item-content6 .title-content {
-  height: 19.16666667rem;
+  height: 19.166666666666668rem;
   background: url('../../images/bg1.png') no-repeat;
   background-size: 100% 100%;
 }
@@ -217,8 +221,8 @@
 }
 .item-content6 .list .li {
   background: #fff;
-  margin: 0.83333333rem;
-  border-radius: 0.83333333rem;
+  margin: 0.8333333333333334rem;
+  border-radius: 0.8333333333333334rem;
   box-shadow: 0px -4px 2px 0 #d8d8d8, 4px 0 5px 0 #d8d8d8, 0 4px 2px 0 #d8d8d8, -4px 0 2px 0 #d8d8d8;
   position: relative;
   z-index: 999;
@@ -231,29 +235,29 @@
   font-weight: bold;
 }
 .item-content6 .list .en-txt {
-  font-size: 0.91666667rem;
+  font-size: 0.9166666666666666rem;
   color: #918f8f;
 }
 .item-content6 .list .li-lt p {
-  width: 3.33333333rem;
-  height: 3.33333333rem;
+  width: 3.3333333333333335rem;
+  height: 3.3333333333333335rem;
   border: 1px dotted #e9540b;
   border-radius: 50%;
-  font-size: 0.83333333rem;
-  padding-top: 0.33333333rem;
+  font-size: 0.8333333333333334rem;
+  padding-top: 0.3333333333333333rem;
   color: #e9540b;
 }
 .item-content6 .list .li-rt {
-  font-size: 0.79166667rem;
+  font-size: 0.7916666666666666rem;
   color: #231815;
   text-align: justify;
-  padding-bottom: 0.41666667rem;
+  padding-bottom: 0.4166666666666667rem;
 }
 .item-content6 .list .row {
   margin-top: 1.25rem;
 }
 .item-content6 .bottom-bg {
-  height: 17.08333333rem;
+  height: 17.083333333333332rem;
   width: 100%;
   background: url('../../images/bg2.png') no-repeat;
   background-size: 100% 100%;
@@ -263,8 +267,8 @@
 }
 .item-content6 .bottom-bg .btns {
   position: absolute;
-  bottom: 0.83333333rem;
-  padding: 0.83333333rem 0;
+  bottom: 0.8333333333333334rem;
+  padding: 0.8333333333333334rem 0;
 }
 .item-content7 .box .content {
   background: #fff;
@@ -275,7 +279,7 @@
   color: #eb6100;
 }
 .item-content7 .sub-title {
-  font-size: 1.33333333rem;
+  font-size: 1.3333333333333333rem;
   color: #000;
 }
 /* 您与健康只差一个电话 */
@@ -303,7 +307,7 @@
   white-space: nowrap;
 }
 .ask h5 {
-  font-size: 0.83333333rem;
+  font-size: 0.8333333333333334rem;
 }
 .dialogue {
   background: #48c5d9;
