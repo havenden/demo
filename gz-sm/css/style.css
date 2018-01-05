@@ -1,0 +1,51 @@
+*{font-size: 0.9rem;color: #333;font-family: "microsoft yahei",Arial;}
+@media (max-width: 575px) {
+    *{font-size: 0.9rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    *{font-size: 0.9rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+    *{font-size:1rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    *{font-size: 1rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+
+.sec6-pic{
+    position: relative;
+}
+.sec6-pic .txt{
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+    color: #333333;
+    font-weight: bold;
+}
+.section6 .title{
+    color: #f98d05;
+    font-weight: bold;
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    *{font-size: 1rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+.text-indent{text-indent:1.8rem;}
+.bg-blue{background: #1388e7;}
+.text-blue{color: #0791d9;}
+.text-orange{color: #f98d05;}
+.bg-light-yellow{background: #ffffdd;}
+.bg-light-blue{background: #b9ddee;}
+.border-red{border: solid 1px #870703;}
+.bg-red{background: #870703;}
+/*header*/
+header ul.nav li{margin-bottom: 0.22rem;padding: 0;}
+header ul.nav li a{display: inline-block;width: 97%;background: #0081c5;color: #fff;padding:.2rem 0;font-size: 1.1rem;}
+/*footer-nav*/
+.footer-nav>div{border-right: solid 1px #fff;}
+.footer-nav>div:last-child{border-right:none;}
