@@ -1,0 +1,36 @@
+@import "common.css";
+@import "iconfont.css";
+@import "style.css";
+body {
+  font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
+  color: #231815;
+  background: #f9f9f9;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+
+/* 轮播图 */
+#case .carousel-indicators{bottom: -1.5rem;}
+#case .carousel-indicators li{width: 0.2rem;height: 0.2rem;border-radius: 0.1rem;background: #c9c9c9;}
+#case .carousel-indicators .active{background: #ed4814;}
+
+
+/*common*/
+.text-back{color: #d7d7d7;}
+.text-black{color: #000;}
+.text-green{color: #379717;}
+.bg-orange{background: #ffce22;}
+.bg-blue{background: #4cb9ce;}
+.text-orange{color: #e26c0a;}
+.border-dashed{border: dashed 1px #e4c6c7;}
+.btn-green{background: #098762;color: #fff !important;}
+.title-num{display: inline-block;padding:0.5rem;border-top-right-radius: 1rem;border-bottom-right-radius: 1rem; }
+/*header*/
+header ul.nav li{margin-bottom: 0.22rem;padding: 0;}
+header ul.nav li a{display: inline-block;width: 97%;background: #10a971;color: #fff;padding:.2rem 0;font-size: 1.1rem;text-decoration: none;}
+
+
+
