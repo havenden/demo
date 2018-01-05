@@ -168,6 +168,18 @@
 .item-content4 .content {
   position: relative;
 }
+.business-card .zbk {
+  background: url('../../images/zkb.png') no-repeat;
+  background-size: 40% ;
+  background-position-x: left;
+  background-position-y: bottom;
+}
+.business-card .zxl {
+  background: url('../../images/zxl.png') no-repeat;
+  background-size: 48%;
+  background-position-x: left;
+  background-position-y: bottom;
+}
 /* item-content6  抑郁症的终结者—CN脑神经多维平衡疗法 */
 .contact .box {
   background: url('../../images/block.jpg') repeat-y;
