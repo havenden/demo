@@ -137,27 +137,32 @@
 .business-card {
   width: 485/@r;
   margin: auto;
+  height: 100%;
   background-color: #dcdddd;
   box-shadow: 5/@r 1/@r 3/@r 0
   rgba(0, 0, 0, 0.75);
   border-radius: 12/@r;
 }
-.business-card .media-object{
-  margin-top: 1.5rem;
-  padding-bottom: 10/@r;
+.business-card .m-left{
+  position: relative;
+}
+.business-card .m-object{
+  position: absolute;
+  bottom: 0;
 }
 .doctor-name {
   font-family: MicrosoftYaHei;
   font-size: 40/@r;
   color: #2a2929;
 }
-.business-card .media-body {
+.business-card .m-body {
   color: #020000;
+  float: left;
 }
 .doctor-job {
   font-size: 22/@r;
   color: #2a2929;
-  text-indent: 4em;
+  text-indent: 2em;
 }
 .business-card p {
   font-size: 18/@r;
