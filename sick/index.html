@@ -1,0 +1,610 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2018年你还会被这些“病”困扰吗？</title>
+    <meta name="viewport" id="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="/sick/style.css"> -->
+    <link href="http://img.jammyfm.com/jam-day/image/favicon.png" type="image/x-icon" rel="icon">
+    <link href="http://img.jammyfm.com/jam-day/image/favicon.png" type="image/x-icon" rel="shortcut icon">
+    <link href="http://img.jammyfm.com/jam-day/image/favicon.png" type="image/x-icon" rel="Bookmark">
+    <script type="text/javascript">
+        var MAX_WIDTH = 640;
+
+        /**
+         * IIFE: 设置 1REM = 1/10 * 屏幕宽度
+         */
+        (function () {
+            function setUnit() {
+                var docWidth = document.documentElement.clientWidth > MAX_WIDTH ? MAX_WIDTH : document.documentElement.clientWidth;
+                document.documentElement.style.fontSize = docWidth / 10 + "px";
+            }
+
+            var h = null;
+            window.addEventListener("resize", function () {
+                clearTimeout(h);
+                h = setTimeout(setUnit, 300);
+            }, false);
+
+            setUnit();
+
+            window.UAParam = {
+                isAndroid: navigator.userAgent.match(/android/gi),
+                isIos: navigator.userAgent.match(/iphone|ipod|ipad/gi),
+                isIos9: navigator.userAgent.match(/iPhone OS 9/i) || navigator.userAgent.match(/iPhone OS 10/i),
+                isWeixin: navigator.userAgent.match(/micromessenger/gi),
+                isWeibo: navigator.userAgent.match(/weibo/gi),
+                isChrome: navigator.userAgent.match(/Chrome\/([\d.]+)/i) || navigator.userAgent.match(/CriOS\/([\d.]+)/i),
+                isJamApp: navigator.userAgent.match(/JAMMusic/g)
+            }
+        })();
+    </script>
+</head>
+<body>
+<div style="display: none"><img src="images/fxy.jpg" alt=""></div>
+<div class="wrapper">
+    <div class="landing page">
+        <div class="loading-inner">
+            <i class="icon-pill"></i>
+            <p class="progress">0%</p>
+        </div>
+    </div>
+    <div class="home page">
+        <div class="start-btn O-btn"></div>
+    </div>
+    <div class="page-0 page">
+        <div class="O-wrapper">
+            <div class="title">-病力单-</div>
+            <label for="name">“患者”姓名</label>
+            <input type="text" id="name" maxlength="8">
+            <div style="margin-left: -.64rem; margin-right: -.64rem;">
+                <div class="submit-btn O-btn disabled"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page-1 page">
+        <div class="desc"></div>
+        <div class="question">
+            (1/6)这段音乐给你的感受是？
+        </div>
+        <div class="answer">
+            <div class="a-item item" data-target="p3" data-num="1">A.舒缓</div>
+            <div class="a-item item" data-target="p3" data-num="2">B.悲伤</div>
+            <div class="a-item item" data-target="p3" data-num="3">C.优雅</div>
+            <div class="a-item item" data-target="p3" data-num="2">D.冷漠</div>
+        </div>
+    </div>
+    <div class="page-2 page">
+        <div class="desc"></div>
+        <div class="question">
+            (2/6)这段音乐对应的场景应该是？
+        </div>
+        <div class="answer">
+            <div class="a-item item" data-target="p2" data-num="2">A.即将要迟到</div>
+            <div class="a-item item" data-target="p2" data-num="6">B.熬夜改方案</div>
+            <div class="a-item item" data-target="p2" data-num="4">C.通宵开大会</div>
+            <div class="a-item item" data-target="p2" data-num="3">D.凌晨在加班</div>
+        </div>
+    </div>
+    <div class="page-3 page">
+        <div class="desc"></div>
+        <div class="question">
+            (3/6)这段音乐的色彩是？
+        </div>
+        <div class="answer">
+            <div class="a-item item" data-target="p1" data-num="4">A.鲜艳的红色</div>
+            <div class="a-item item" data-target="p1" data-num="1">B.葱郁的绿色</div>
+            <div class="a-item item" data-target="p1" data-num="2">C.深沉的蓝色</div>
+            <div class="a-item item" data-target="p1" data-num="3">D.耀眼的黄色</div>
+        </div>
+    </div>
+    <div class="page-4 page">
+        <div class="desc"></div>
+        <div class="question">
+            (4/6)这段音乐播放的场景应该是？
+        </div>
+        <div class="answer">
+            <div class="a-item item" data-target="p4" data-num="3">A.早上赖床不想起</div>
+            <div class="a-item item" data-target="p4" data-num="4">B.减肥计划制定中</div>
+            <div class="a-item item" data-target="p4" data-num="2">C.请假一天出去浪</div>
+            <div class="a-item item" data-target="p4" data-num="1">D.手机关机在度假</div>
+        </div>
+    </div>
+    <div class="page-5 page">
+        <div class="desc"></div>
+        <div class="question">
+            (5/6)这段音乐是从什么地方播放出来的？
+        </div>
+        <div class="answer">
+            <div class="a-item item">A.大学晚自习前的广播站</div>
+            <div class="a-item item">B.卧室的黑胶唱片机里</div>
+            <div class="a-item item">C.行驶在高速公路上的跑车里</div>
+            <div class="a-item item" style="font-size: .35rem;">D.电视机中正在播放的音乐类节目</div>
+        </div>
+    </div>
+    <div class="page-6 page">
+        <div class="desc"></div>
+        <div class="question">
+            (6/6)与这段音乐最符合的画面是？
+        </div>
+        <div class="answer answer-img clearfix">
+            <div class="a-item item-img" data-target="p5" data-num="3">
+                <span>A</span>
+                <div class="image">
+                    <img src="/images/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="a-item item-img" data-target="p5" data-num="6">
+                <span>B</span>
+                <div class="image">
+                    <img src="/images/2.jpg" alt="">
+                </div>
+            </div>
+            <div class="a-item item-img" data-target="p5" data-num="2">
+                <span>C</span>
+                <div class="image">
+                    <img src="/images/3.jpg" alt="">
+                </div>
+            </div>
+            <div class="a-item item-img" data-target="p5" data-num="1">
+                <span>D</span>
+                <div class="image">
+                    <img src="/images/4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="result">
+        <div class="share-ind">
+            长按下方图片保存
+        </div>
+        <canvas id="draw" width="750" height="1206" style="display: none;"></canvas>
+        <div id="radar"
+             style="width: 1000px; height: 1000px; position: absolute; left: -9999px; top: -9999px; display: none;"></div>
+        <img id="result" src="" alt="" style="width: 100%; vertical-align: middle;">
+        <div class="restart-btn"><span>查看病历</span></div>
+    </div>
+    <div class="loading-wrapper">
+        <div class="loading-inner">
+            <i class="icon-loading"></i>
+            <h4>正在分析中...</h4>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal-inner">
+        <p id="guideText"></p>
+        <img src="images/ewm.gif" alt="" class="qrcode">
+        <div style="font-size: 12px;">长按二维码</div>
+        <div class="close-btn"></div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js" charset="utf-8"></script>
+<script src="js/pxloader-all.min.js" charset="utf-8"></script>
+<script src="js/lrz.all.bundle.js" charset="utf-8"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/qrious.min.js"></script>
+<script>
+    (function ($) {
+        $.fn.maxlength = function (options) {
+            var t = $(this);
+            t.each(function () {
+                options = $.extend(
+                        {},
+                        {
+                            counterContainer: false,
+                            text: '%left characters left' // %length %maxlength %left
+                        },
+                        options
+                );
+                var t = $(this),
+                        data = {
+                            options: options,
+                            field: t,
+                            counter: $('<div class="maxlength"></div>'),
+                            maxLength: parseInt(t.attr("maxlength"), 10),
+                            lastLength: null,
+                            updateCounter: function () {
+                                var length = this.field.val().length,
+                                        text = this.options.text.replace(/\B%(length|maxlength|left)\b/g, $.proxy(function (match, p) {
+                                            return (p == 'length') ? length : (p == 'maxlength') ? this.maxLength : (this.maxLength - length);
+                                        }, this));
+                                this.counter.html(text);
+                                if (length != this.lastLength) {
+                                    this.updateLength(length);
+                                }
+                            },
+                            updateLength: function (length) {
+                                this.field.trigger("update.maxlength", [
+                                    this.field,
+                                    this.lastLength,
+                                    length,
+                                    this.maxLength,
+                                    this.maxLength - length
+                                ]);
+                                this.lastLength = length;
+                            }
+                        };
+                if (data.maxLength) {
+                    data.field
+                            .data("maxlength", data)
+                            .bind({
+                                "keyup change": function (e) {
+                                    $(this).data("maxlength").updateCounter();
+                                },
+                                "cut paste drop": function (e) {
+                                    setTimeout($.proxy(function () {
+                                        $(this).data("maxlength").updateCounter();
+                                    }, this), 1);
+                                }
+                            });
+                    if (options.counterContainer) {
+                        options.counterContainer.append(data.counter);
+                    } else {
+                        // data.field.after(data.counter);
+                    }
+                    data.updateCounter();
+                }
+            });
+            return t;
+        };
+    })(jQuery);
+</script>
+<script>
+    // delay each image and append the timestamp to prevent caching
+    var STAT_ENV = 'prod',
+
+            timestamp = new Date().getTime(),
+
+            $progress = $('.progress'),
+            loader = new PxLoader(),
+    // baseURL = '/sick/img/';
+            baseURL = '/images/';
+    userName = '',
+            totalScore = 0;
+
+    var preloadImgArr = [
+        'home_bg3.jpg',
+        'icon-pill.png',
+        'loading.png',
+        'loading.jpg',
+        'modal.png',
+        'question_bg.jpg',
+        'restart-btn.png',
+        'start-btn.png',
+        'submit-btn.png',
+        '1.jpg',
+        '2.jpg',
+        '3.jpg',
+        '4.jpg',
+        '11.mp3',
+        '22.mp3',
+        '33.mp3',
+        '44.mp3',
+        '55.mp3',
+        '66.mp3'
+    ]
+
+    for (var i = 0; i < preloadImgArr.length; i++) {
+        loader.addImage(baseURL + preloadImgArr[i]);
+    }
+
+    var resultBg = loader.addImage(baseURL + 'result_bg.jpg?ver=2017122101', null, null, {origin: true});
+
+    // callback that runs every time an image loads
+    loader.addProgressListener(function (e) {
+        // the event provides stats on the number of completed items
+        $progress.text(parseInt(e.completedCount / e.totalCount * 100) + '%');
+
+        if (e.completedCount == e.totalCount) {
+            $('.landing').fadeOut();
+
+            //sendStat('start_page_loaded');
+        }
+    });
+
+    loader.start();
+
+    var computeParam = {
+        p1: {
+            name: '抑郁症',
+            value: 0
+        },
+        p2: {
+            name: '焦虑症',
+            value: 0
+        },
+        p3: {
+            name: '选择困难症',
+            value: 0
+        },
+        p4: {
+            name: '拖延症',
+            value: 0
+        },
+        p5: {
+            name: '强迫症',
+            value: 0
+        }
+    }, genChartData = [];
+
+    var myChart = echarts.init(document.getElementById('radar'));
+
+    var audio = new Audio();
+
+    var gameURLArr = [
+        'nhbwcx.net',
+        // 'jskstgd.com',
+        // 'rdg2016.com',
+        // 'yang-fei.com',
+        // 'shjlsyc.com',
+        // 'sjzhuode.com',
+        // 'denglongvip.com',
+        // 'shuntaiyuan.net',
+        '9jmm.com',
+        // 'tianxinmudiao.com',
+        '7chaowan.net'
+        // 'warshipgirls.net'
+    ];
+    var gameURL = 'http://h5.' + gameURLArr[Math.floor((Math.random() * gameURLArr.length))] + '/sick/index.html';
+    var qr = new QRious({
+        value: gameURL,
+        size: 300,
+    });
+
+    var resultDescArr = ['多喝热水也救不了你的病了', '病入膏肓，余生瞎XX过吧', '你不是一无所有，你还有病啊', '下一步就是脱发了', '珍爱生命，远离手机'];
+    var resultDesc = resultDescArr[Math.floor((Math.random() * resultDescArr.length))];
+
+    $(function () {
+/*        $.ajax({
+            url: 'http://h5.nhbwcx.net/sick/options-get',
+            success: function (res) {
+                $('#guideText').html(res.data.text ? res.data.text : '这里有些小玩意<br/>让你忘却一切烦恼');
+                $('.qrcode').attr('src', res.data.url);
+            }
+        })*/
+
+        $('.start-btn').on('click', function () {
+            $('.page').hide();
+            $('.page-0').show();
+
+            //sendStat('name_input_page_loaded');
+        })
+
+        $('#name').on('keyup change cut paste drop', function () {
+            if ($(this).val().trim().length > 0) {
+                $('.submit-btn').removeClass('disabled');
+            } else {
+                $('.submit-btn').addClass('disabled');
+            }
+        })
+
+        $('.submit-btn').on('click', function () {
+            userName = $('#name').val().trim();
+            $('.page').hide();
+            $('.page-1').show();
+            audio.src = baseURL + '11.mp3';
+            audio.loop = true;
+            audio.play();
+            //sendStat('first_question_page_loaded');
+        })
+
+        $('.restart-btn').on('click', function () {
+            //sendStat('click_left_bottom_btn');
+
+            $('.modal').show();
+        });
+
+        $('.modal .close-btn').on('click', function () {
+            $('.modal').hide();
+        })
+
+        $('.qrcode').on('touchstart', function (e) {
+            e.stopPropagation();
+            time = setTimeout(function () {
+                //sendStat('long_touch_qrcode');
+            }, 900);
+        });
+        $('.qrcode').on('touchend', function (e) {
+            e.stopPropagation();
+            clearTimeout(time);
+        });
+
+        $('.a-item').on('click', function () {
+            var $this = $(this);
+            var param = $this.data('target');
+            var num = $this.data('num');
+            var $wrapperEl = $this.parents('.page');
+            var questionNum = /page-(\d)/g.exec($wrapperEl.attr('class'))[1];
+
+            audio.pause();
+
+            if (param) {
+                computeParam[param]['value'] = num;
+            }
+
+            if (questionNum == 6) {
+                var maxVal = 0, maxName = '', maxInd = '';
+
+                $.each(computeParam, function (i, val) {
+                    totalScore += val['value'];
+
+                    if (maxVal < val['value']) {
+                        maxVal = val['value'];
+                        maxName = val['name'];
+                        maxInd = i;
+                    }
+
+                    genChartData.push(val['value']);
+                });
+
+                audio.pause();
+
+                $('.loading-wrapper').show();
+
+                generateResult(resultBg);
+
+                return;
+            }
+
+            $('.page').hide();
+
+            var nextNum = parseInt(++questionNum);
+            $('.page-' + nextNum).show();
+
+            audio.src = baseURL + nextNum + '' + nextNum + '.mp3';
+            audio.play();
+        })
+    })
+
+    function generateResult(resultBg) {
+        draw(resultBg, function (img) {
+            localResizeUpload(img, function (res) {
+                if (res.errcode == 0) {
+                    document.getElementById('result').src = res.data.url;
+
+                    setTimeout(function () {
+                        $('.page').hide();
+                        $('.loading-wrapper').hide();
+                        $('.result').show();
+
+                        //sendStat('result_generated');
+                    }, 500);
+                }
+            })
+        })
+    }
+
+    function draw(bg, cb) {
+        var canvas = document.getElementById("draw");
+        var ctx = canvas.getContext("2d");
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        ctx.drawImage(bg, 0, 0, 750, 1206);
+
+        ctx.font = "bold 36px ccyt2";
+        ctx.fillStyle = "#032862";
+        ctx.textAlign = "center";
+        ctx.fillText(userName, 548, 295);
+
+        var fontSize = 26;
+        var descLen = resultDesc.length;
+        if (descLen > 12) {
+            fontSize = 21;
+        } else if (descLen > 11) {
+            fontSize = 23;
+        }
+
+        ctx.font = "bold " + fontSize + "px ccyt2";
+        ctx.fillStyle = "#032862";
+        ctx.textAlign = "center";
+        ctx.fillText(resultDesc, 550, 354);
+
+        option.series[0].data[0].value = genChartData;
+        myChart.setOption(option);
+        var chartImg = new Image();
+        chartImg.onload = function () {
+
+            ctx.drawImage(chartImg, -49, 356, 848, 848);
+
+            var qrcode = new Image();
+            qrcode.onload = function () {
+                ctx.fillStyle = "#fff";
+                ctx.fillRect(590, 1036, 136, 136);
+                ctx.drawImage(qrcode, 594, 1040, 128, 128);
+
+                cb(canvas.toDataURL());
+            }
+            qrcode.src = qr.toDataURL();
+        }
+        chartImg.src = myChart.getDataURL();
+    }
+
+    function localResizeUpload(img, cb) {
+        lrz(img, {quality: 0.9, fieldName: 'uploadfile'})
+                .then(function (rst) {
+                    // 处理成功会执行
+
+                    $.ajax({
+                        type:'get',
+                        //url: 'http://h5.nhbwcx.net/upload/file',
+                        url: 'draw.php?name=' + userName + '&resultDesc=' + resultDesc,
+                        //data: rst.formData,
+                        //data: {name: userName, resultDesc: resultDesc},
+                        //data: 'name=' + userName + '&resultDesc=' + resultDesc,
+                        processData: false,
+                        contentType: false,
+                        dataType:'json',
+                        beforeSend: function () {
+                        },
+                        success: cb,
+                        complete: function (res) {
+                        },
+                        error: function (jqXHR, textStatus) {
+                            if (textStatus === 'timeout') {
+                                alert('超时，请稍后重试');
+                                $('.loading-wrapper').hide();
+                            }
+                        },
+                        timeout: 30000
+                    });
+                })
+    }
+
+/*    function sendStat(name, value) {
+        $.post('http://stat.jammyfm.com/api/v1/data/stat', JSON.stringify({
+            env: STAT_ENV,
+            key: name,
+            value: value,
+            region: 'STAT_SICK_20171221',
+            device_info: window.navigator.userAgent
+        }))
+    }*/
+
+    var option = {
+        radar: {
+            name: {
+                show: false
+            },
+            indicator: [
+                {name: '1', max: 6},
+                {name: '2', max: 6},
+                {name: '3', max: 6},
+                {name: '4', max: 6},
+                {name: '5', max: 6}
+            ],
+            splitLine: 'none',
+            splitArea: 'none',
+            axisLine: 'none',
+            splitNumber: 1
+        },
+        series: [{
+            type: 'radar',
+            symbol: 'none',
+            lineStyle: {
+                normal: {
+                    type: 'dashed',
+                    width: 5,
+                    color: '#fff'
+                }
+            },
+            areaStyle: {
+                normal: {
+                    color: 'rgba(255, 255, 255, 0.4)'
+                }
+            },
+            data: [
+                {
+                    value: [4, 4, 4, 4, 4],
+                }
+            ]
+        }]
+    };
+</script>
+</body>
+</html>
