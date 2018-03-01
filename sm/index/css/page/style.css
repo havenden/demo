@@ -1,0 +1,163 @@
+.insomnia-type-list {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.insomnia-type-list li {
+  text-align: center;
+  float: left;
+}
+.insomnia-type-list li.w40 {
+  width: 40%;
+}
+.insomnia-type-list li.w30 {
+  width: 30%;
+}
+.insomnia-type-list li a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  background: #10a987;
+  padding: 0.42857142857142855rem 0;
+  font-size: 0.42857142857142855rem;
+}
+.item-content2 .video-title {
+  color: #10a971;
+  font-size: 0.47619047619047616rem;
+  text-align: center;
+  font-weight: bold;
+}
+.item-content2 .nav-tabs li {
+  width: 20%;
+  text-align: center;
+}
+.item-content2 .nav-tabs a {
+  width: 98%;
+  display: inline-block;
+}
+.item-content2 .img-list {
+  border-radius: 0.14285714285714285rem;
+  border: solid 1px #ddd;
+}
+.item .img-list h4 {
+  font-size: 0.42857142857142855rem;
+  color: #333;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 0.23809523809523808rem;
+  margin-top: 0.1rem;
+}
+.item .img-list p {
+  line-height: 0.6190476190476191rem;
+  font-size: 0.38095238095238093rem;
+}
+.item .img-list li:first-child {
+  border-bottom: 1px solid #ddd;
+}
+.item-content2 #general-situation a {
+  display: inline-block;
+  font-size: 0.47619047619047616rem;
+  background: #5dc06f;
+  text-align: center;
+  padding: 0.2857142857142857rem 0 0.30952380952380953rem;
+  color: #fff;
+}
+.item-content2 #general-situation .active {
+  background: #f9a74d;
+}
+.item-content2 #general-situation .active:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 0.2rem solid transparent;
+  border-right: 0.2rem solid transparent;
+  border-top: 0.3rem solid #f9a74d;
+  position: absolute;
+  bottom: -0.3rem;
+  left: 45%;
+}
+/* 专家简介 */
+.item-content3 .doctor-name {
+  color: #10a971;
+}
+.item-content3 .doctor-name b {
+  font-size: 0.6666666666666666rem;
+}
+.item-content3 .doctor-name span {
+  font-size: 0.42857142857142855rem;
+  border-left: 1px solid #10a971;
+  padding-left: 0.2rem;
+  margin-left: 0.4rem;
+}
+.item-content3 .job {
+  font-size: 0.47619047619047616rem;
+  color: #333;
+  padding: 0.23809523809523808rem 0 0.19047619047619047rem;
+  border-top: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  margin-top: 0.23809523809523808rem;
+}
+.item-content3 .carousel-item {
+  height: 8rem;
+}
+.item-content3 .carousel-item p {
+  font-size: 0.42857142857142855rem;
+  line-height: 0.7619047619047619rem;
+}
+.item-content3 .carousel-item p span {
+  color: #333;
+}
+.item-content3 .btns a {
+  font-size: 0.42857142857142855rem;
+  background: #ff8909;
+  padding: 0.23809523809523808rem 0 0.19047619047619047rem;
+  border-radius: 0.14285714285714285rem;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+}
+.item-content3 .carousel-control-prev-icon {
+  background: url('../../images/arrow-prev.png');
+  background-size: 100% 100%;
+}
+.item-content3 .carousel-control-next-icon {
+  background: url('../../images/arrow-next.png');
+  background-size: 100% 100%;
+}
+.item-content6 p {
+  font-size: 0.42857142857142855rem;
+  color: #333;
+}
+.form form {
+  border-top: 1px solid #ccc;
+}
+.form label {
+  text-align: right;
+  font-size: 0.38095238095238093rem;
+}
+.form .form-control {
+  padding: 0.1rem 0.5rem;
+  font-size: 0.38095238095238093rem;
+}
+.form .form-group {
+  margin-bottom: 0.3rem;
+}
+.form .btns li a {
+  display: inline-block;
+  padding: 0.14285714285714285rem 0.5rem;
+  background: #ff8909;
+  color: #fff;
+  text-align: center;
+  font-size: 0.42857142857142855rem;
+  border-radius: 0.19047619047619047rem;
+}
+.form .btns li a.btn-reset {
+  background: #098762;
+}
+.form .btns li a .iconfont {
+  font-size: 0.5714285714285714rem;
+  padding-right: 0.2rem;
+}

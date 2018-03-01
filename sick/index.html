@@ -359,7 +359,7 @@
 
     var resultDescArr = ['多喝热水也救不了你的病了', '病入膏肓，余生瞎XX过吧', '你不是一无所有，你还有病啊', '下一步就是脱发了', '珍爱生命，远离手机'];
     var resultDesc = resultDescArr[Math.floor((Math.random() * resultDescArr.length))];
-
+    var resultImg='';
     $(function () {
 /*        $.ajax({
             url: 'http://h5.nhbwcx.net/sick/options-get',
@@ -466,7 +466,7 @@
         draw(resultBg, function (img) {
             localResizeUpload(img, function (res) {
                 if (res.errcode == 0) {
-                    document.getElementById('result').src = res.data.url;
+                    document.getElementById('result').src = resultImg;
 
                     setTimeout(function () {
                         $('.page').hide();
@@ -529,13 +529,13 @@
         lrz(img, {quality: 0.9, fieldName: 'uploadfile'})
                 .then(function (rst) {
                     // 处理成功会执行
-
+                    resultImg=rst.origin;
                     $.ajax({
-                        type:'get',
+                        type:'post',
                         //url: 'http://h5.nhbwcx.net/upload/file',
-                        url: 'draw.php?name=' + userName + '&resultDesc=' + resultDesc,
+                        url: 'draw.php',
                         //data: rst.formData,
-                        //data: {name: userName, resultDesc: resultDesc},
+                        data: {name: userName, resultDesc: resultDesc, imgData: rst.origin},
                         //data: 'name=' + userName + '&resultDesc=' + resultDesc,
                         processData: false,
                         contentType: false,
