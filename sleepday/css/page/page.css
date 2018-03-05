@@ -1,0 +1,8 @@
+@import "common.css";
+@import "iconfont.css";
+@import "style.css";
+
+body {
+    font-family: "Microsoft Yahei","Droid Serif", Georgia, "Times New Roman", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "WenQuanYi Micro Hei", serif;
+    color: #515153;
+}
