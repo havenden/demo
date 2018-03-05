@@ -17,7 +17,7 @@
 }
 /* item-content */
 .item-content {
-  border-top: 0.14285714rem solid #fafafa;
+  /*border-top: 0.14285714rem solid #fafafa;*/
 }
 .item-content .chart-imgs li:nth-of-type(1) {
   width: 45%;
