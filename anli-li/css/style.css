@@ -1,0 +1,37 @@
+*{font-size: 0.9rem;color: #343a40;font-family: Arial, "microsoft yahei";}
+@media (max-width: 575px) {
+    *{font-size: 0.9rem;}
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    *{font-size: 0.9rem;}
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+    *{font-size:1.0rem;}
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    *{font-size: 1.0rem;}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    *{font-size: 1.1rem;}
+}
+
+/*common*/
+.text-indent{text-indent: 2em;}
+.text-back{color: #d7d7d7;}
+.text-black{color: #000;}
+.text-green{color: #1b5ba5;}
+.bg-orange{background: #ffce22;}
+.bg-blue{background: #4cb9ce;}
+.text-orange{color: #e26c0a;}
+.border-dashed{border: dashed 1px #e4c6c7;}
+.btn-green{background: #1b5ba5;color: #fff !important;}
+.title-num{display: inline-block;padding:0.5rem;border-top-right-radius: 1rem;border-bottom-right-radius: 1rem; }
+/*header*/
+header ul.nav li{margin-bottom: 0.22rem;padding: 0;}
+header ul.nav li a{display: inline-block;width: 97%;background: #1b5ba5;color: #fff;padding:.2rem 0;font-size: 1.1rem;text-decoration: none;}
+

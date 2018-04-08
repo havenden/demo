@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="wap-font-scale" content="no">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- plugs -->
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.min.js"></script>
+    <title>灰指甲治疗专题</title>
+    <meta name="keywords" content="keywords">
+    <meta name="description" content="description">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="width: 100%;max-width: 640px;margin: 0 auto;">
+<header>
+    <div class="logo"><a href="tel:{dede:global.cfg_tel/}"><img src="images/logo.jpg" class="img-fluid" alt="深圳鹏程医院灰指甲专科"></a></div>
+    <ul class="list-unstyled row text-center nav mx-0">
+        <li class="col-3"><a href="/">网站首页</a></li>
+        <li class="col-3"><a href="/special/yyzt/">医院简介</a></li>
+        <li class="col-3"><a href="/special/zjtd/">专业医生</a></li>
+        <li class="col-3"><a href="javascript:;" onclick="openZoosUrl()">问答平台</a></li>
+        <li class="col-3"><a href="/special/kfal/">康复案例</a></li>
+        <li class="col-3"><a href="/special/treatment/">特色治疗</a></li>
+        <li class="col-3"><a href="/special/route/">来院路线</a></li>
+        <li class="col-3"><a href="/special/newyear/" onclick="openZoosUrl()">减免申请</a></li>
+    </ul>
+</header>
+
+<!-- banner -->
+<div class="banner">
+    <div id="bannerIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#bannerIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#bannerIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="javascript:;" onclick="openZoosUrl()"><img class="d-block w-100" src="images/zlzt-banner1.jpg" alt="First slide"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="javascript:;" onclick="openZoosUrl()"><img class="d-block w-100" src="images/zlzt-banner2.jpg" alt="Second slide"></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            var doctorElement= document.getElementById('bannerIndicators')
+            var hm=new Hammer(doctorElement);
+            hm.on("swipeleft",function(){
+                $('#bannerIndicators').carousel('next')
+            })
+            hm.on("swiperight",function(){
+                $('#bannerIndicators').carousel('prev')
+            })
+        })
+    </script>
+</div>
+
+<section class="mt-3">
+    <h5 class="text-center font-weight-bold text-muted">治疗灰指甲</h5>
+    <h4 class="text-center font-weight-bold text-dark">17年只做这一件事 </h4>
+    <div class="mt-3 py-5" style="background: url(images/bg1.jpg) no-repeat 100% 100%;">
+        <h5 class="text-center text-theme">深圳鹏程灰指甲诊疗中心</h5>
+        <p class="mx-5 text-center">摒弃传统疗法，以“无创、不拔甲”为原则<br>
+            采用国际先进速效离子导入，促进指甲自然再生<br>
+            深圳唯一灰指甲专科医院，17年打造精湛技艺<br>
+            超vip美丽服务！患者满意度高达<span class="text-danger">99％</span><br>
+            -
+        </p>
+        <div class="text-center">
+            <a href="javascript:openZoosUrl();" class="d-inline-block px-2 py-1 border-orange text-orange">你了解最新速效离子导入技术吗？</a>
+        </div>
+    </div>
+</section>
+
+<section class="mt-3 mx-2">
+    <div class="title bg-theme pt-4">
+        <img src="images/t-icon1.png" class="img-fluid title-icon">
+        <h5 class="text-center font-weight-bold text-light">最新速效离子导入技术</h5>
+        <p class="text-center text-light pb-2 mb-0">千万灰指甲患者的不二选择</p>
+    </div>
+    <div class="items">
+        <div class="item mt-2 bg-muted p-3">
+            <h6 class="font-weight-bold text-dark">姓名：张先生    24岁  白领</h6>
+            <h6 class="font-weight-bold text-dark">病情：外伤导致左脚大拇指灰指甲</h6>
+            <p class="text-muted">患者自述：有一天踢足球时，左脚用力过猛导致大拇指甲下出血，指甲也发黑。后面和同事游泳时推荐我去深圳鹏程医院，我选择了最新的速效离子导入疗法... <a href="javascript:openZoosUrl();" class="text-danger">【了解详情】</a></p>
+            <div class="text-center"><img src="images/item1-pic.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="item mt-2 bg-muted p-3">
+            <h6 class="font-weight-bold text-dark">姓名：李先生  27岁  保险公司销售</h6>
+            <h6 class="font-weight-bold text-dark">病情：左手大拇指得灰指甲5年</h6>
+            <p class="text-muted">患者自述：由于工作忙碌我一直没有重视自己的灰指甲，直到近期去见客户，客户看到我手上的灰指甲，让我心里感到十分难堪，听说速效离子导入法对治疗灰指甲很有效我便... <a href="javascript:openZoosUrl();" class="text-danger">【了解详情】</a></p>
+            <div class="text-center"><img src="images/item2-pic.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+    <div class="items">
+        <div class="item mt-2 bg-muted p-3">
+            <h6 class="font-weight-bold text-dark">姓名：许小姐  25岁  人民医院护士</h6>
+            <h6 class="font-weight-bold text-dark">病情：左脚大拇指得灰指甲1年</h6>
+            <p class="text-muted">患者自述：我是一年前脚上患上灰指甲的，自己尝试药物治疗，却不能完全治好，人民医院并没有专门治疗灰指甲的科室，我便来到鹏程灰指甲专科选择了最新的速效离子导入疗法... <a href="" class="text-danger">【了解详情】</a></p>
+            <div class="text-center"><img src="images/item3-pic.jpg" class="img-fluid"></div>
+        </div>
+    </div>
+</section>
+
+<section class="mt-3 mx-2">
+    <h5 class="text-center font-weight-bold text-muted">美观  无痛   快速</h5>
+    <h4 class="text-center font-weight-bold text-dark">不痛不拔甲 还你漂亮甲</h4>
+
+    <div class="title bg-theme pt-4 mt-4">
+        <img src="images/t-icon2.png" class="img-fluid title-icon">
+        <h5 class="text-center font-weight-bold text-light">究其源</h5>
+        <p class="text-center text-light pb-2 mb-0">检测致病菌</p>
+        
+    </div>
+    <div class="mt-3 p-3 bg-muted">
+        <div class="row mx-0">
+            <div class="col-6 px-0">
+                <p class="text-dark font-weight-bold">采用美国高分倍真菌检测仪，对患者的指甲进行检测，查出致病因。</p>
+                <p class="text-muted">适用范围：甲浑浊、甲增厚、甲变色、甲分离、甲易碎、甲脱落等。</p>
+                <p class="text-muted">检测时间：3分钟</p>
+                <p class="text-muted text-center"><img src="images/j1-l.jpg" class="img-fluid h-sm-100"></p>
+            </div>
+            <div class="col-6 text-center">
+                <img src="images/j1-r.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="btns text-center mt-3">
+            <a href="javascript:openZoosUrl();" class="mr-3 px-3 py-1 text-orange border-orange">咨询详情</a>
+            <a href="javascript:openZoosUrl();" class="ml-3 px-3 py-1 text-green border-green">在线问诊</a>
+        </div>
+    </div>
+
+    <div class="title bg-theme pt-4 mt-4">
+        <img src="images/t-icon3.png" class="img-fluid title-icon">
+        <h5 class="text-center font-weight-bold text-light">对其症</h5>
+        <p class="text-center text-light pb-2 mb-0">微波渗透甲床</p>
+        
+    </div>
+    <div class="mt-3 p-3 bg-muted">
+        <div class="row mx-0">
+            <div class="col-6 px-0">
+                <p class="text-dark font-weight-bold">采用物理仪器治疗，将药离子渗入到指甲病变部位，快速杀菌消炎。</p>
+                <p class="text-muted">适用范围：甲浑浊、甲增厚、甲变色、甲分离、甲易碎、甲脱落等。</p>
+                <p class="text-muted">检测时间：8分钟</p>
+                <p class="text-muted text-center"><img src="images/j2-l.jpg" class="img-fluid"></p>
+            </div>
+            <div class="col-6 text-center">
+                <img src="images/j2-r.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="btns text-center mt-3">
+            <a href="javascript:openZoosUrl();" class="mr-3 px-3 py-1 text-orange border-orange">咨询详情</a>
+            <a href="javascript:openZoosUrl();" class="ml-3 px-3 py-1 text-green border-green">在线问诊</a>
+        </div>
+    </div>
+
+    <div class="title bg-theme pt-4 mt-4">
+        <img src="images/t-icon4.png" class="img-fluid title-icon">
+        <h5 class="text-center font-weight-bold text-light">断其根</h5>
+        <p class="text-center text-light pb-2 mb-0">杀菌养护一体</p>
+        
+    </div>
+    <div class="mt-3 p-3 bg-muted">
+        <div class="row mx-0">
+            <div class="col-6 px-0">
+                <p class="text-dark font-weight-bold">独家中药制剂进行浸泡导入，杀灭真菌，修复受损甲床、促进新甲再生。</p>
+                <p class="text-muted">适用范围：甲浑浊、甲增厚、甲变色、甲分离、甲易碎、甲脱落等。</p>
+                <p class="text-muted">检测时间：10分钟</p>
+                <p class="text-muted text-center"><img src="images/j3-l.jpg" class="img-fluid"></p>
+            </div>
+            <div class="col-6 text-center">
+                <img src="images/j3-r.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="btns text-center mt-3">
+            <a href="javascript:openZoosUrl();" class="mr-3 px-3 py-1 text-orange border-orange">咨询详情</a>
+            <a href="javascript:openZoosUrl();" class="ml-3 px-3 py-1 text-green border-green">在线问诊</a>
+        </div>
+    </div>
+    <div class="title bg-theme pt-4 mt-4">
+        <img src="images/t-icon5.png" class="img-fluid title-icon">
+        <h5 class="text-center font-weight-bold text-light">治其本</h5>
+        <p class="text-center text-light pb-2 mb-0">杜绝复发</p>
+        
+    </div>
+    <div class="mt-3 p-3 bg-muted">
+        <div class="row mx-0">
+            <div class="col-6 px-0">
+                <p class="text-dark font-weight-bold">不打针、不拔甲，彻底杀灭残留在指甲的真菌，并修复受损甲床。</p>
+                <p class="text-muted">适用范围：甲浑浊、甲增厚、甲变色、甲分离、甲易碎、甲脱落等。</p>
+                <p class="text-muted">检测时间：10分钟</p>
+                <p class="text-muted text-center"><img src="images/j4-l.jpg" class="img-fluid"></p>
+            </div>
+            <div class="col-6 text-center">
+                <img src="images/j4-r.jpg" class="img-fluid">
+            </div>
+        </div>
+        <div class="btns text-center mt-3">
+            <a href="javascript:openZoosUrl();" class="mr-3 px-3 py-1 text-orange border-orange">咨询详情</a>
+            <a href="javascript:openZoosUrl();" class="ml-3 px-3 py-1 text-green border-green">在线问诊</a>
+        </div>
+    </div>
+</section>
+
+<section class="mt-3">
+    <h5 class="text-center font-weight-bold text-muted">看诊免费</h5>
+    <h4 class="text-center font-weight-bold text-dark">2018灰指甲公益普查</h4>
+    <p class="mt-3 text-indent mx-2">2018年，深圳市灰指甲防治公益普查活动正式展开，<span class="text-danger">免费</span>为有灰指甲的患者进行检查会诊，<strong>凡从网络渠道预约患者，将获得由社会公益组织提供的50％治疗费用援助</strong>...... <a href="javascript:openZoosUrl();" class="text-danger">【了解详情】</a></p>
+    <div class="title mt-4">
+        <img src="http://wap.zx.82112525.com/images/title-bg.jpg" class="w-100">
+        <h5 class="tip text-theme font-weight-bold">挂号平台<span class="h5 text-dark font-weight-bold px-1">|</span><span class="text-dark">网络挂号享50％费用减免</span></h5>
+        <p class="mb-0 swt-btn"><a href="tel:{dede:global.cfg_tel/}"><img src="http://wap.zx.82112525.com/images/swt-btn.gif" class="img-fluid"></a></p>
+    </div>
+    <p class="mx-3"><span class="text-danger">温馨提示：</span>当前预约挂号人数较多，您可直接通过网络预约挂号，不需排队等候！</p>
+    <div class="mt-3 bg-muted py-3 mx-2">
+        <form name="gh_form">
+        <div class="form-group row mx-0">
+            <label for="gh_name" class="col-3 px-0 col-form-label text-right font-weight-bold"><span class="text-danger">*</span>您的姓名：</label>
+            <div class="col-9">
+                <input type="text" class="form-control" name="gh_name" id="gh_name" placeholder="您的姓名">
+            </div>
+        </div>
+        <div class="form-group row mx-0">
+            <label for="gh_date" class="col-3 px-0 col-form-label text-right font-weight-bold"><span class="text-danger">*</span>预约时间：</label>
+            <div class="col-9">
+                <input type="text" class="form-control date-item" name="gh_date" id="gh_date" >
+            </div>
+        </div>
+        <div class="form-group row mx-0">
+            <label for="gh_tel" class="col-3 px-0 col-form-label text-right font-weight-bold"><span class="text-danger">*</span>联系电话：</label>
+            <div class="col-9">
+                <input type="text" class="form-control" name="gh_tel" id="gh_tel" placeholder="联系电话">
+            </div>
+        </div>
+        <div class="form-group row mx-0">
+            <label for="gh_disease_dummy" class="col-3 px-0 col-form-label text-right font-weight-bold"><span class="text-danger">*</span>预约病种：</label>
+            <div class="col-9">
+                <select name="gh_disease" id="gh_disease" class="form-control"></select>
+            </div>
+        </div>
+        <div class="form-group row mx-5">
+            <div class="w-75 mx-auto text-center">
+                <a href="javascript:;" id="gh_submit" name="gh_submit"><img src="http://wap.zx.82112525.com/images/gh-submit.png" class="img-fluid"></a>
+            </div>
+        </div>
+        </form>
+        <script type="text/javascript">
+            //获取当前时间，格式YYYY-MM-DD
+            function getNowFormatDate() {
+                var date = new Date();
+                var seperator1 = "/";
+                var year = date.getFullYear();
+                var month = date.getMonth() + 1;
+                var strDate = date.getDate();
+                if (month >= 1 && month <= 9) {
+                    month = "0" + month;
+                }
+                if (strDate >= 0 && strDate <= 9) {
+                    strDate = "0" + strDate;
+                }
+                var currentdate = year + seperator1 + month + seperator1 + strDate;
+                return currentdate;
+            }
+            currentdate=getNowFormatDate();
+            document.getElementById('gh_date').value=currentdate;
+        </script>
+    </div>
+</section>
+
+<section>
+    <p class="bg-black text-light px-3 mb-0 py-2">99％的灰指甲患者还看过以下问题</p>
+    <div class="mx-2">
+        <a href="javascript:openZoosUrl('&e','灰指甲治疗要多少钱？');" class="mt-2 bg-muted d-block text-muted py-2 px-1">灰指甲治疗要多少钱？</a>
+        <a href="javascript:openZoosUrl('&e','深圳治疗灰指甲哪家医院比较好？');" class="mt-2 bg-muted d-block text-muted py-2 px-1">深圳治疗灰指甲哪家医院比较好？</a>
+        <a href="javascript:openZoosUrl('&e','灰指甲治疗需要拔甲吗？');" class="mt-2 bg-muted d-block text-muted py-2 px-1">灰指甲治疗需要拔甲吗？</a>
+        <a href="javascript:openZoosUrl('&e','有哪些治疗灰指甲的偏方？');" class="mt-2 bg-muted d-block text-muted py-2 px-1">有哪些治疗灰指甲的偏方？</a>
+    </div>
+</section>
+
+<footer class="mt-5 mx-3">
+    <div class="row mx-0 mb-3">
+        <div class="col-5 px-0"><img src="http://wap.zx.82112525.com/images/map.jpg" class="w-100"></div>
+        <div class="col-7 px-0">
+            <div class="row mx-0">
+                <div class="col-2 px-0"><img src="http://wap.zx.82112525.com/images/clock.jpg" class="w-100"></div>
+                <div class="col-10 px-0">
+                    <p class="mb-0 pl-2 h6">门诊时间（节假日无休）</p>
+                    <p class="mb-0 pl-2 mt-2 text-green">08:00—18:00</p>
+                </div>
+            </div>
+            <div class="row mx-0 mt-2">
+                <div class="col-2 px-0"><img src="http://wap.zx.82112525.com/images/location.jpg" class="w-100"></div>
+                <div class="col-10 px-0">
+                    <p class="mb-0 pl-2 h6">医院地址：</p>
+                    <p class="mb-0 pl-2 mt-2 text-green">深圳市罗湖区笋岗东路3013号长虹大厦</p>
+                </div>
+            </div>
+            <div class="row mx-0 mt-2">
+                <div class="col-6 px-0 text-center">
+                    <a href="/page/lylx/" class="btn btn-green">查看地图&gt;</a>
+                </div>
+                <div class="col-6 px-0 text-center">
+                    <a href="#" class="btn btn-green">返回顶部&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="text-center">QQ：1069076259 官方微信：szhzjyy</p>
+    <p class="text-center">电话：0755-85212177</p>
+    <p class="text-center"><a href="http://zx.82112525.com" class="text-dark">电脑版</a> | <a class="text-dark" href="/">手机版</a></p>
+</footer>
+</body>
+</html>

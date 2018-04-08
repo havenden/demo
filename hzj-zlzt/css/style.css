@@ -1,0 +1,43 @@
+*{font-size: 0.9rem;color: #333;font-family: "microsoft yahei",Arial;}
+@media (max-width: 575px) {
+    *{font-size: 0.9rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    *{font-size: 0.9rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+    *{font-size:1rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    *{font-size: 1rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    *{font-size: 1rem;color: #333;font-family: "microsoft yahei",Arial;}
+}
+/*common*/
+.text-indent{text-indent: 2em;}
+.text-theme{color: #15809b;}
+.bg-theme{background-color: #45a6be;}
+.bg-muted{background-color: #e7eff1;}
+.bg-black{background-color: #000;}
+.border-orange{border: solid 1px #ea8300;}
+.border-green{border: solid 1px #80c767;}
+.text-orange{color: #ea8300;}
+.text-green{color: #80c767;}
+.text-dark{color: #000 !important;}
+
+.btn-green{background: #098762;color: #fff !important;}
+.title{position: relative;}
+.title .tip{position: absolute;left: 8%;top: 0}
+.title .swt-btn{position: absolute;width:20%;right:8%;top: 0}
+section .title{position: relative;}
+.title-icon{position: absolute;left: 0;right: 0;top: -1.2rem;margin: 0 auto;}
+
+/*header*/
+header ul.nav li{margin-bottom: 0.22rem;padding: 0;}
+header ul.nav li a{display: inline-block;width: 97%;background: #15809b;color: #fff;padding:.2rem 0;font-size: 1.1rem;text-decoration: none;}
