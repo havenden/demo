@@ -1,0 +1,32 @@
+*{font-size: 0.9rem;color: #343a40;font-family: "microsoft yahei",Arial ;}
+@media (max-width: 575px) {
+    *{font-size: 0.9rem;}
+}
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px) {
+    *{font-size: 1rem;}
+}
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px) { 
+    *{font-size:1.1rem;}
+}
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    *{font-size: 1.1rem;}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    *{font-size: 1.1rem;}
+}
+/*common*/
+.text-indent{text-indent: 2em;}
+.bg-red{background-color: #a71c15;}
+.text-red{color:#ff0813;}
+.btn-red{background: #a71c15 !important;}
+.bg-warm{background-color: #fef3d7;}
+.text-warm{color: #cf9232;}
+.border-radius{border-radius: 1rem;}
+.nbtn{color: #d85f54;border: solid 1px #d85f54;border-radius: 1rem;}
+/*nav*/
+div.nav{background: #8c1c16; }
