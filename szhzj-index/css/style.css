@@ -27,6 +27,6 @@
 .bg-warm{background-color: #fef3d7;}
 .text-warm{color: #cf9232;}
 .border-radius{border-radius: 1rem;}
-.nbtn{color: #d85f54;border: solid 1px #d85f54;border-radius: 1rem;}
+.nbtn,.nbtn:hover{color: #d85f54;border: solid 1px #d85f54;border-radius: 1rem;text-decoration: none;}
 /*nav*/
 div.nav{background: #8c1c16; }
